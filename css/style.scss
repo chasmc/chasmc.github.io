@@ -1,0 +1,167 @@
+@import "casestudytemplate";
+@import "variables";
+
+@mixin fontstyle{
+  text-align:center;
+  text-transform:uppercase;
+  font-family:source sans pro;
+  font-weight:900;
+  font-size:35px;
+}
+
+@mixin linkstyle{
+  text-decoration:none;
+  color:black;
+}
+
+body{
+  margin:0;
+}
+
+// landing page
+header{
+
+  .logo{
+    height:350px;
+    display:block;
+    margin:0 auto;
+    margin-top:100px;
+  }
+
+  .nav{
+    margin:0;
+    text-align:center;
+    position:relative;
+    top:160px;
+
+    .landingtitles{
+      list-style-type:none;
+      display:inline-block;
+      padding:0 7%;
+      @include fontstyle;
+
+      a{
+        @include linkstyle;
+      }
+
+      a:hover{
+        color:white;
+      }
+    }
+
+    .landing-contact{
+      position:relative;
+      right:2%;
+    }
+  }
+}
+// end landing page
+
+// header template
+.headertemplate{
+  height:110px;
+  width:100%;
+  background-image:linear-gradient(
+    white 70%,
+    rgba(white, .9));
+  padding:10px 0;
+  top:0;
+
+  .navtemplate{
+    margin:0;
+    text-align:center;
+
+    li{
+      @include fontstyle;
+      font-size:25px;
+      display:inline-block;
+      box-sizing:border-box;
+      padding:0 3%;
+
+      a{
+        @include linkstyle;
+      }
+    }
+
+    .logo{
+      height:120px;
+      margin:0;
+    }
+
+    .link1, .link2{
+      position:relative;
+      bottom:50px;
+    }
+
+    .link2{
+      position:relative;
+      right:1.3%;
+    }
+  }
+}
+// end header template
+
+// about, work and reach page titles
+.main3-titles{
+  @include fontstyle;
+  display:block;
+  margin:80px auto;
+  margin-bottom:40px;
+}
+
+.worktitle{
+  background-color:$blue;
+  color:white;
+}
+
+.abouttitle{
+  background-color:$yellow;
+  color:white;
+}
+
+.reachtitle{
+  background-color:$green;
+  color:white;
+}
+
+// work main content
+.maincontent-work, .maincontent-about, .maincontent-contact{
+  margin:0 10%;
+}
+
+  .homepage-grid{
+    float: left;
+    width: 31.3%;
+    margin:0 1% 2% 1%;
+    height:auto;
+    padding:2% 0;
+    box-sizing:border-box;
+
+      h2{
+        @include fontstyle;
+        margin:0;
+      }
+
+      .image-box{
+        height:300px;
+        width: 100%;
+        box-sizing:border-box;
+
+
+        img{
+          object-fit:contain;
+          display:block;
+          margin:0 auto;
+          height:100%;
+          width: 100%;
+        }
+      }
+
+    // project blurb
+    p{
+      @include fontstyle;
+      font-weight:100;
+      font-size:15px;
+      margin-top:0;
+    }
+  }

@@ -1,0 +1,121 @@
+@import "variables";
+
+@mixin fontstyle{
+  text-align:center;
+  text-transform:uppercase;
+  font-family:source sans pro;
+  font-weight:900;
+  font-size:35px;
+}
+
+@mixin liststylecase{
+  list-style-type:none;
+  font-family:source sans pro;
+  padding:10px 0;
+  font-weight:100;
+  font-size:20px;
+}
+
+.main-content-casestudy{
+  margin:5% 15% 10% 15%;
+}
+
+.title-casestudy{
+  margin-bottom:5%;
+  text-align:center;
+  text-transform:uppercase;
+  font-family:source sans pro;
+  font-size:25px;
+  font-weight:900;
+
+  .casestudy{
+    font-family:source sans pro;
+    font-weight:100;
+  }
+}
+
+.title{
+    text-transform:uppercase;
+    text-align:center;
+    font-family:source sans pro;
+    font-weight:900;
+    font-size:25px;
+    background-color:$blue;
+    color:white;
+    margin:0;
+}
+
+.challengescontainer{
+  text-align:center;
+  padding:0 0 5% 0;
+
+    .challengestext{
+      font-family:source sans pro;
+      font-weight:100;
+      font-size:20px;
+      margin:3% 10% 0 10%;
+    }
+  }
+
+  .wireframes{
+    height:265px;
+    margin:2% 0 5% 0;
+  }
+
+  .mockups{
+    height:325px;
+    margin:5% 2% 0 2%;
+  }
+
+.toolscontainer{
+  text-align:center;
+  margin-top:5%;
+
+  .tools{
+    padding:0;
+
+    li{
+      @include liststylecase;
+      font-weight:900;
+    }
+  }
+}
+
+.example-container{
+  margin:0;
+}
+.challenges-button, .work-button{
+  text-decoration:none;
+  color:$blue;
+}
+
+.challenges-button h4{
+  border:1px solid $blue;
+  border-radius:3%;
+  @include fontstyle;
+  font-size:20px;
+  display:inline-block;
+  text-align:center;
+  margin:0 3%;
+  margin-top:5%;
+  padding:2%;
+  width:20%;
+}
+
+.work-button h4{
+  border:1px solid $blue;
+  border-radius:3%;
+  @include fontstyle;
+  font-size:20px;
+  display:block;
+  text-align:center;
+  margin:0 auto;
+  margin-top:3%;
+  padding:2%;
+  width:20%;
+}
+
+.challenges-button h4:hover, .work-button h4:hover{
+  color:white;
+  background-color:$blue;
+}
