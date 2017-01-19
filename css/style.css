@@ -31,12 +31,21 @@
     font-size: 20px;
     margin: 3% 10% 0 10%; }
 
+.bikescreen {
+  height: 250px;
+  width: 49.7%;
+  margin-top: 5%; }
+
 .wireframes {
   height: 265px;
   margin: 2% 0 5% 0; }
 
 .mockups {
   height: 325px;
+  margin: 5% 2% 0 2%; }
+
+.goodreads-wireframes {
+  height: 400px;
   margin: 5% 2% 0 2%; }
 
 .toolscontainer {
@@ -51,6 +60,10 @@
       font-weight: 100;
       font-size: 20px;
       font-weight: 900; }
+
+.goodreads-mockup {
+  height: 400px;
+  margin: 5% 2% 0 5%; }
 
 .example-container {
   margin: 0; }
@@ -176,7 +189,7 @@ header .nav {
   background-color: #ffdd00;
   color: white; }
 
-.reachtitle {
+.contact-title {
   background-color: #009f50;
   color: white; }
 
@@ -216,5 +229,23 @@ header .nav {
     font-weight: 100;
     font-size: 15px;
     margin-top: 0; }
+
+.about-content {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: source sans pro;
+  font-weight: 900;
+  font-size: 35px;
+  text-transform: capitalize;
+  font-weight: 900; }
+
+.contact-content {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: source sans pro;
+  font-weight: 900;
+  font-size: 35px;
+  text-transform: lowercase;
+  font-weight: 500; }
 
 /*# sourceMappingURL=style.css.map */
