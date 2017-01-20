@@ -124,7 +124,7 @@ header .nav {
   header .nav .landingtitles {
     list-style-type: none;
     display: inline-block;
-    padding: 0 7%;
+    padding: 0 7.3%;
     text-align: center;
     text-transform: uppercase;
     font-family: source sans pro;
@@ -135,9 +135,20 @@ header .nav {
       color: black; }
     header .nav .landingtitles a:hover {
       color: white; }
-  header .nav .landing-contact {
+  header .nav .landing-work {
     position: relative;
-    right: 2%; }
+    right: .5%; }
+  header .nav .landing-resume {
+    position: relative;
+    right: 2.5%; }
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 34%; }
+  footer .landing-email {
+    background-color: white;
+    color: black; }
 
 .headertemplate {
   height: 110px;
@@ -186,12 +197,10 @@ header .nav {
   color: white; }
 
 .abouttitle {
-  background-color: #ffdd00;
-  color: white; }
-
-.contact-title {
-  background-color: #009f50;
-  color: white; }
+  border-bottom: 1px solid #ffdd00;
+  color: black;
+  text-align: center;
+  text-transform: capitalize; }
 
 .maincontent-work, .maincontent-about, .maincontent-contact {
   margin: 0 10%; }
@@ -237,15 +246,18 @@ header .nav {
   font-weight: 900;
   font-size: 35px;
   text-transform: capitalize;
-  font-weight: 900; }
+  font-weight: 200;
+  border-bottom: 1px solid #ffdd00;
+  padding-bottom: 4%; }
 
-.contact-content {
+.email {
   text-align: center;
   text-transform: uppercase;
   font-family: source sans pro;
   font-weight: 900;
   font-size: 35px;
   text-transform: lowercase;
-  font-weight: 500; }
+  font-weight: 200;
+  color: black; }
 
 /*# sourceMappingURL=style.css.map */

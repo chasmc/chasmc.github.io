@@ -37,7 +37,7 @@ header{
     .landingtitles{
       list-style-type:none;
       display:inline-block;
-      padding:0 7%;
+      padding:0 7.3%;
       @include fontstyle;
 
       a{
@@ -49,10 +49,26 @@ header{
       }
     }
 
-    .landing-contact{
+    .landing-work{
       position:relative;
-      right:2%;
+      right:.5%;
     }
+
+    .landing-resume{
+      position:relative;
+      right:2.5%;
+    }
+  }
+}
+
+footer{
+  position:absolute;
+  bottom:0;
+  left:34%;
+
+  .landing-email{
+    background-color:white;
+    color:black;
   }
 }
 // end landing page
@@ -115,13 +131,10 @@ header{
 }
 
 .abouttitle{
-  background-color:$yellow;
-  color:white;
-}
-
-.contact-title{
-  background-color:$green;
-  color:white;
+  border-bottom:1px solid $yellow;
+  color:black;
+  text-align:center;
+  text-transform:capitalize;
 }
 
 // work main content
@@ -166,15 +179,18 @@ header{
     }
   }
 
-  // contact
+  // about
   .about-content{
     @include fontstyle;
     text-transform:capitalize;
-    font-weight:900;
+    font-weight:200;
+    border-bottom:1px solid $yellow;
+    padding-bottom:4%;
   }
 
-  .contact-content{
+  .email{
     @include fontstyle;
     text-transform:lowercase;
-    font-weight:500;
+    font-weight:200;
+    color:black;
   }
