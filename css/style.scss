@@ -85,9 +85,10 @@ footer{
   top:0;
   background:linear-gradient(
     rgba(white, 1),
-    rgba(white, .98)
+    rgba(white, .97)
   );
   position:fixed;
+  z-index:100;
 
   .navtemplate{
     margin:0;
