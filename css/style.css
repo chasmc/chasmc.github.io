@@ -197,10 +197,21 @@ footer {
   color: white; }
 
 .abouttitle {
-  border-bottom: 1px solid #ffdd00;
   color: black;
-  text-align: center;
-  text-transform: capitalize; }
+  text-align: left;
+  text-transform: capitalize;
+  font-size: 25px;
+  margin: 3% 0 0 10%; }
+  .abouttitle .email {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: source sans pro;
+    font-weight: 900;
+    font-size: 35px;
+    text-transform: lowercase;
+    font-weight: 200;
+    font-size: 25px;
+    color: black; }
 
 .maincontent-work, .maincontent-about, .maincontent-contact {
   margin: 0 10%; }
@@ -239,25 +250,25 @@ footer {
     font-size: 15px;
     margin-top: 0; }
 
-.about-content {
-  text-align: center;
-  text-transform: uppercase;
-  font-family: source sans pro;
-  font-weight: 900;
-  font-size: 35px;
-  text-transform: capitalize;
-  font-weight: 200;
-  border-bottom: 1px solid #ffdd00;
-  padding-bottom: 4%; }
-
-.email {
-  text-align: center;
-  text-transform: uppercase;
-  font-family: source sans pro;
-  font-weight: 900;
-  font-size: 35px;
-  text-transform: lowercase;
-  font-weight: 200;
-  color: black; }
+.maincontent-about {
+  margin-bottom: 5%;
+  padding: 1% 0;
+  border-top: 1px solid #ffdd00;
+  border-bottom: 1px solid #ffdd00; }
+  .maincontent-about .about-image {
+    float: left;
+    height: 31.98rem;
+    margin-right: 1.2%; }
+  .maincontent-about .about-text {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: source sans pro;
+    font-weight: 900;
+    font-size: 35px;
+    text-transform: none;
+    text-align: left;
+    font-weight: 200;
+    font-size: 25px;
+    margin: 0; }
 
 /*# sourceMappingURL=style.css.map */

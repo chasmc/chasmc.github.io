@@ -117,7 +117,7 @@ footer{
 }
 // end header template
 
-// about, work and reach page titles
+// about, work and resume page titles
 .main3-titles{
   @include fontstyle;
   display:block;
@@ -131,10 +131,19 @@ footer{
 }
 
 .abouttitle{
-  border-bottom:1px solid $yellow;
   color:black;
-  text-align:center;
+  text-align:left;
   text-transform:capitalize;
+  font-size:25px;
+  margin:3% 0 0 10%;
+
+  .email{
+    @include fontstyle;
+    text-transform:lowercase;
+    font-weight:200;
+    font-size:25px;
+    color:black;
+  }
 }
 
 // work main content
@@ -180,17 +189,24 @@ footer{
   }
 
   // about
-  .about-content{
-    @include fontstyle;
-    text-transform:capitalize;
-    font-weight:200;
+  .maincontent-about{
+    margin-bottom:5%;
+    padding:1% 0;
+    border-top:1px solid $yellow;
     border-bottom:1px solid $yellow;
-    padding-bottom:4%;
-  }
 
-  .email{
-    @include fontstyle;
-    text-transform:lowercase;
-    font-weight:200;
-    color:black;
+    .about-image{
+      float:left;
+      height:31.98rem;
+      margin-right:1.2%;
+    }
+
+    .about-text{
+      @include fontstyle;
+      text-transform:none;
+      text-align:left;
+      font-weight:200;
+      font-size:25px;
+      margin:0;
+    }
   }
