@@ -5,7 +5,7 @@
   text-transform:uppercase;
   font-family:source sans pro;
   font-weight:900;
-  font-size:35px;
+  font-size:25px;
 }
 
 @mixin liststylecase{
@@ -17,12 +17,14 @@
 }
 
 .main-content-casestudy{
-  margin:5% 15% 10% 15%;
+  margin:0 10%;
+  margin-bottom:5%;
 }
 
 .title-casestudy{
-  margin-bottom:5%;
   text-align:center;
+  // border-bottom:1px solid black;
+  margin-bottom:5%;
   text-transform:uppercase;
   font-family:source sans pro;
   font-size:25px;
@@ -36,24 +38,26 @@
 
 .title{
     text-transform:uppercase;
-    text-align:center;
+    text-align:left;
     font-family:source sans pro;
     font-weight:900;
     font-size:25px;
-    background-color:$blue;
-    color:white;
+    color:black;
+    border-bottom:1px solid $blue;
     margin:0;
 }
 
 .challengescontainer{
-  text-align:center;
   padding:0 0 5% 0;
+  box-sizing:border-box;
 
     .challengestext{
       font-family:source sans pro;
       font-weight:100;
       font-size:20px;
-      margin:3% 10% 0 10%;
+      margin:3% 10% 5% 0;
+      float:left;
+      width:60%;
     }
   }
 
@@ -75,12 +79,6 @@
     margin:5% 2% 0 2%;
   }
 
-  // goodreads
-  .goodreads-wireframes{
-    height:400px;
-    margin:5% 2% 0 2%;
-  }
-
 .toolscontainer{
   text-align:center;
   margin-top:5%;
@@ -97,16 +95,26 @@
 // end branchless
 
 // goodreads
+.goodreads-wireframes{
+  height:400px;
+  margin:5% 2% 0 2%;
+}
+
+.goodreads-logo{
+  height:250px;
+  display:block;
+  margin:5% auto;
+}
 .goodreads-mockup{
   height:400px;
-  margin:5% 2% 0 5%;
-
+  display:block;
+  margin:5% auto;
 }
 
 .example-container{
-  margin:0;
+  clear:both;
 }
-.challenges-button, .work-button{
+.challenges-button, .work-button, .branchless-challenges-button{
   text-decoration:none;
   color:$blue;
 }
@@ -118,8 +126,23 @@
   font-size:20px;
   display:inline-block;
   text-align:center;
-  margin:0 3%;
-  margin-top:5%;
+  position:relative;
+  top:-50%;
+  transform:translateY(50%);
+  padding:2%;
+  width:20%;
+}
+
+.branchless-challenges-button h4{
+  border:1px solid $blue;
+  border-radius:3%;
+  @include fontstyle;
+  font-size:20px;
+  display:inline-block;
+  text-align:center;
+  position:relative;
+  top:-90%;
+  transform:translateY(90%);
   padding:2%;
   width:20%;
 }
@@ -132,12 +155,12 @@
   display:block;
   text-align:center;
   margin:0 auto;
-  margin-top:3%;
   padding:2%;
   width:20%;
 }
 
-.challenges-button h4:hover, .work-button h4:hover{
+.challenges-button h4:hover, .work-button h4:hover, .branchless-challenges-button h4:hover{
   color:white;
   background-color:$blue;
+  transition:.3s;
 }
