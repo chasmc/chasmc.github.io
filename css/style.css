@@ -135,6 +135,9 @@
   background-color: #00a1e5;
   transition: .3s; }
 
+.landing-body {
+  margin: 0; }
+
 body {
   margin: 150px 0 0 0; }
 
@@ -156,12 +159,14 @@ header .nav {
     text-transform: uppercase;
     font-family: source sans pro;
     font-weight: 900;
-    font-size: 25px; }
+    font-size: 25px;
+    font-size: 35px; }
     header .nav .landingtitles a {
       text-decoration: none;
       color: black; }
     header .nav .landingtitles a:hover {
-      color: white; }
+      color: white;
+      transition: .7s; }
   header .nav .landing-work {
     position: relative;
     right: .5%; }
@@ -172,9 +177,8 @@ header .nav {
 footer {
   position: absolute;
   bottom: 0;
-  left: 38%; }
+  left: 40.5%; }
   footer .landing-email {
-    background-color: white;
     color: black; }
 
 .headertemplate {
