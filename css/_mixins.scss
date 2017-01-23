@@ -1,0 +1,36 @@
+@mixin fontstyle{
+  text-align:center;
+  text-transform:uppercase;
+  font-family:source sans pro;
+  font-weight:900;
+  font-size:25px;
+}
+
+@mixin liststylecase{
+  list-style-type:none;
+  font-family:source sans pro;
+  padding:10px 0;
+  font-weight:100;
+  font-size:20px;
+}
+
+@mixin linkstyle{
+  text-decoration:none;
+  color:black;
+}
+
+@mixin buttonstyles{
+  border:1px solid $blue;
+  border-radius:3%;
+  font-size:20px;
+  display:inline-block;
+  text-align:center;
+  padding:2%;
+  width:20%;
+}
+
+@mixin button-hoverstyles{
+  color:white;
+  background-color:$blue;
+  transition:.3s;
+}

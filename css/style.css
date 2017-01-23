@@ -13,7 +13,8 @@
     font-family: source sans pro;
     font-weight: 100; }
 
-.title {
+.title, .resume-title {
+  clear: both;
   text-transform: uppercase;
   text-align: left;
   font-family: source sans pro;
@@ -27,6 +28,7 @@
   padding: 0 0 5% 0;
   box-sizing: border-box; }
   .challengescontainer .challengestext {
+    clear: both;
     font-family: source sans pro;
     font-weight: 100;
     font-size: 20px;
@@ -38,6 +40,9 @@
   height: 250px;
   width: 49.7%;
   margin-top: 5%; }
+
+.branchless-example-container {
+  padding-left: 5%; }
 
 .wireframes {
   height: 265px;
@@ -74,63 +79,78 @@
   display: block;
   margin: 5% auto; }
 
-.example-container {
-  clear: both; }
-
-.challenges-button, .work-button, .branchless-challenges-button {
+.bikemd-challenges-button, .work-button, .branchless-challenges-button, .goodreads-challenges-button {
   text-decoration: none;
   color: #00a1e5; }
 
-.challenges-button h4 {
-  border: 1px solid #00a1e5;
-  border-radius: 3%;
+.bikemd-challenges-button h4 {
   text-align: center;
   text-transform: uppercase;
   font-family: source sans pro;
   font-weight: 900;
   font-size: 25px;
+  border: 1px solid #00a1e5;
+  border-radius: 3%;
   font-size: 20px;
   display: inline-block;
   text-align: center;
-  position: relative;
-  top: -50%;
-  transform: translateY(50%);
   padding: 2%;
-  width: 20%; }
+  width: 20%;
+  position: relative;
+  top: -150%;
+  transform: translateY(150%); }
 
 .branchless-challenges-button h4 {
-  border: 1px solid #00a1e5;
-  border-radius: 3%;
   text-align: center;
   text-transform: uppercase;
   font-family: source sans pro;
   font-weight: 900;
   font-size: 25px;
+  border: 1px solid #00a1e5;
+  border-radius: 3%;
   font-size: 20px;
   display: inline-block;
   text-align: center;
-  position: relative;
-  top: -90%;
-  transform: translateY(90%);
   padding: 2%;
-  width: 20%; }
+  width: 20%;
+  position: relative;
+  top: -150%;
+  transform: translateY(150%); }
 
-.work-button h4 {
-  border: 1px solid #00a1e5;
-  border-radius: 3%;
+.goodreads-challenges-button h4 {
   text-align: center;
   text-transform: uppercase;
   font-family: source sans pro;
   font-weight: 900;
   font-size: 25px;
+  border: 1px solid #00a1e5;
+  border-radius: 3%;
   font-size: 20px;
-  display: block;
+  display: inline-block;
   text-align: center;
-  margin: 0 auto;
   padding: 2%;
-  width: 20%; }
+  width: 20%;
+  position: relative;
+  top: -50%;
+  transform: translateY(50%); }
 
-.challenges-button h4:hover, .work-button h4:hover, .branchless-challenges-button h4:hover {
+.work-button h4 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: source sans pro;
+  font-weight: 900;
+  font-size: 25px;
+  border: 1px solid #00a1e5;
+  border-radius: 3%;
+  font-size: 20px;
+  display: inline-block;
+  text-align: center;
+  padding: 2%;
+  width: 20%;
+  display: block;
+  margin: 0 auto; }
+
+.bikemd-challenges-button h4:hover, .branchless-challenges-button h4:hover, .goodreads-challenges-button h4:hover, .work-button h4:hover {
   color: white;
   background-color: #00a1e5;
   transition: .3s; }
@@ -166,7 +186,7 @@ header .nav {
       color: black; }
     header .nav .landingtitles a:hover {
       color: white;
-      transition: .7s; }
+      transition: .5s; }
   header .nav .landing-work {
     position: relative;
     right: .5%; }
@@ -219,7 +239,7 @@ footer {
       .headertemplate .navtemplate li .resume-link:hover, .headertemplate .navtemplate li .resume-link.active {
         color: #009f50; }
       .headertemplate .navtemplate li a:hover {
-        transition: .7s; }
+        transition: .5s; }
 
 .main3-titles {
   text-align: center;
@@ -254,6 +274,27 @@ footer {
   font-weight: 200;
   font-size: 25px;
   color: black; }
+
+.maincontent-about {
+  margin-bottom: 5%;
+  padding: 1% 0;
+  border-top: 1px solid #ffdd00;
+  border-bottom: 1px solid #ffdd00; }
+  .maincontent-about .about-image {
+    float: left;
+    height: 15.98rem;
+    margin-right: 1.2%; }
+  .maincontent-about .about-text {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: source sans pro;
+    font-weight: 900;
+    font-size: 25px;
+    text-transform: none;
+    text-align: left;
+    font-weight: 200;
+    font-size: 25px;
+    margin: 0; }
 
 .maincontent-work, .maincontent-about, .maincontent-contact {
   margin: 0 10%; }
@@ -292,25 +333,58 @@ footer {
     font-size: 15px;
     margin-top: 0; }
 
-.maincontent-about {
-  margin-bottom: 5%;
-  padding: 1% 0;
-  border-top: 1px solid #ffdd00;
-  border-bottom: 1px solid #ffdd00; }
-  .maincontent-about .about-image {
-    float: left;
-    height: 15.98rem;
-    margin-right: 1.2%; }
-  .maincontent-about .about-text {
-    text-align: center;
-    text-transform: uppercase;
-    font-family: source sans pro;
-    font-weight: 900;
-    font-size: 25px;
-    text-transform: none;
+.skillscontainer {
+  padding-left: 10%; }
+  .skillscontainer .skills {
+    display: inline-block;
+    padding: 0 5%;
+    padding-left: 1%;
     text-align: left;
-    font-weight: 200;
-    font-size: 25px;
-    margin: 0; }
+    width: 22%;
+    margin: 5% 0; }
+    .skillscontainer .skills li {
+      list-style-type: none;
+      font-family: source sans pro;
+      padding: 10px 0;
+      font-weight: 100;
+      font-size: 20px;
+      font-weight: 900;
+      text-align: center; }
+
+.resume-title {
+  border-bottom: 1px solid #009f50; }
+
+.resume-projects-container {
+  text-align: center; }
+  .resume-projects-container .project {
+    display: inline-block;
+    padding: 0 5%;
+    padding-left: 1%;
+    box-sizing: border-box;
+    text-align: left;
+    width: 30%;
+    margin: 5% 0;
+    border-left: 1px solid black; }
+    .resume-projects-container .project .subtitle {
+      list-style-type: none;
+      font-family: source sans pro;
+      padding: 10px 0;
+      font-weight: 100;
+      font-size: 20px;
+      font-weight: 900;
+      margin: 0;
+      padding: 0; }
+    .resume-projects-container .project .resume-text {
+      margin-bottom: 0;
+      text-align: center;
+      text-transform: uppercase;
+      font-family: source sans pro;
+      font-weight: 900;
+      font-size: 25px;
+      font-weight: 400;
+      font-size: 16px;
+      text-align: left;
+      text-transform: none;
+      font-style: italic; }
 
 /*# sourceMappingURL=style.css.map */
