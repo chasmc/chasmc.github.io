@@ -1,14 +1,14 @@
 @mixin fontstyle{
   text-align:center;
   text-transform:uppercase;
-  font-family:source sans pro;
+  font-family: 'Source Sans Pro', sans-serif;
   font-weight:900;
   font-size:25px;
 }
 
 @mixin liststylecase{
   list-style-type:none;
-  font-family:source sans pro;
+  font-family: 'Source Sans Pro', sans-serif;
   padding:10px 0;
   font-weight:100;
   font-size:20px;

@@ -160,8 +160,8 @@ footer{
 .maincontent-about{
   margin-bottom:5%;
   padding:1% 0;
-  border-top:1px solid $yellow;
-  border-bottom:1px solid $yellow;
+  border-top:3px solid $yellow;
+  border-bottom:3px solid $yellow;
 
   .about-image{
     float:left;
@@ -249,18 +249,15 @@ footer{
   }
 
   .skills1{
-    // background-color:$yellow;
     animation: fadein 2s;
   }
 
   .skills2{
-    // background-color:$blue;
-    animation: fadein 4s;
+    animation: fadein 3s;
   }
 
   .skills3{
-    // background-color:$green;
-    animation: fadein 6s;
+    animation: fadein 5s;
   }
 }
 
