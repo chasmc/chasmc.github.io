@@ -16,12 +16,12 @@
 .title, .resume-title {
   clear: both;
   text-transform: uppercase;
-  text-align: center;
+  text-align: left;
   font-family: source sans pro;
   font-weight: 900;
   font-size: 25px;
-  color: white;
-  background-color: #00a1e5;
+  color: black;
+  border-bottom: 1px solid #00a1e5;
   margin: 0; }
 
 .challengescontainer {
@@ -250,12 +250,12 @@ footer {
   display: block; }
 
 .worktitle {
-  color: white;
-  text-align: center;
+  color: black;
+  text-align: left;
   text-transform: uppercase;
   font-size: 25px;
   margin: 3% 0;
-  background-color: #00a1e5; }
+  border-bottom: 1px solid #00a1e5; }
 
 .abouttitle {
   color: black;
@@ -364,9 +364,9 @@ footer {
     animation: fadein 6s; }
 
 .resume-title {
-  background-color: #009f50;
-  color: white;
-  text-align: center; }
+  border-bottom: 1px solid #009f50;
+  color: black;
+  text-align: left; }
 
 .resume-projects-container {
   text-align: center; }
