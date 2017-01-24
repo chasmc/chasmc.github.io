@@ -334,14 +334,15 @@ footer {
     margin-top: 0; }
 
 .skillscontainer {
-  padding-left: 10%; }
+  padding-left: 3%; }
   .skillscontainer .skills {
     display: inline-block;
-    padding: 0 5%;
-    padding-left: 1%;
+    padding: 3%;
     text-align: left;
     width: 22%;
-    margin: 5% 0; }
+    margin: 5% 2%;
+    background-color: rgba(0, 159, 80, 0.2);
+    border-radius: 3%; }
     .skillscontainer .skills li {
       list-style-type: none;
       font-family: source sans pro;
