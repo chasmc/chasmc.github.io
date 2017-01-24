@@ -238,6 +238,21 @@ footer{
       text-align:center;
     }
   }
+
+  .skills1{
+    background-color:$yellow;
+    animation: fadein 2s;
+  }
+
+  .skills2{
+    background-color:$blue;
+    animation: fadein 3s;
+  }
+
+  .skills3{
+    background-color:$green;
+    animation: fadein 4s;
+  }
 }
 
 .resume-title{
@@ -276,4 +291,9 @@ footer{
       font-style:italic;
     }
   }
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }

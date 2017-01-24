@@ -350,6 +350,15 @@ footer {
       font-size: 20px;
       font-weight: 900;
       text-align: center; }
+  .skillscontainer .skills1 {
+    background-color: #ffdd00;
+    animation: fadein 2s; }
+  .skillscontainer .skills2 {
+    background-color: #00a1e5;
+    animation: fadein 3s; }
+  .skillscontainer .skills3 {
+    background-color: #009f50;
+    animation: fadein 4s; }
 
 .resume-title {
   border-bottom: 1px solid #009f50; }
@@ -387,5 +396,11 @@ footer {
       text-align: left;
       text-transform: none;
       font-style: italic; }
+
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 
 /*# sourceMappingURL=style.css.map */
