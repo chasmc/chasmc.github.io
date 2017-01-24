@@ -137,7 +137,7 @@ footer{
   text-transform:uppercase;
   font-size:25px;
   margin:3% 0;
-  border-bottom:1px solid $blue;
+  border-bottom:3px solid $blue;
 }
 
 .abouttitle{
@@ -226,15 +226,19 @@ footer{
 }
 
 // resume
+.main-content-resume{
+  margin:0 10%;
+  margin-bottom:5%;
+}
+
 .skillscontainer{
   padding-left:3%;
 
   .skills{
     display:inline-block;
-    padding:3%;
     text-align:left;
     width:22%;
-    margin:5% 2%;
+    margin:0;
     border-radius:3%;
 
     li{
@@ -261,41 +265,54 @@ footer{
 }
 
 .resume-title{
-  @extend .title;
-  border-bottom:1px solid $green;
+  text-transform:uppercase;
+  font-family:source sans pro;
+  font-weight:900;
+  font-size:25px;
+  border-bottom:3px solid $green;
   color:black;
   text-align:left;
+  margin-bottom:5%;
 }
 
 .resume-projects-container{
-  text-align:center;
 
   .project{
-    display:inline-block;
+    display:block;
     padding:0 5%;
     padding-left:1%;
     box-sizing:border-box;
     text-align:left;
-    width:30%;
+    width:100%;
     margin:5% 0;
     border-left:1px solid black;
     margin-bottom:10%;
 
     .subtitle{
-      @include liststylecase;
+      @include fontstyle;
       font-weight:900;
+      text-align:left;
       margin:0;
       padding:0;
     }
 
-    .resume-text{
-      margin-bottom:0;
+    .resume-info{
+      margin:0;
       @include fontstyle;
       font-weight:400;
-      font-size:16px;
+      font-size:20px;
       text-align:left;
       text-transform:none;
       font-style:italic;
+      color:$green;
+    }
+
+    .resume-role{
+      @include fontstyle;
+      text-align:left;
+      text-transform:none;
+      font-size:20px;
+      margin-top:1%;
     }
   }
 }
