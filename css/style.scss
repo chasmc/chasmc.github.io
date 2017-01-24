@@ -132,12 +132,12 @@ footer{
 }
 
 .worktitle{
-  color:black;
-  text-align:left;
+  color:white;
+  text-align:center;
   text-transform:uppercase;
   font-size:25px;
   margin:3% 0;
-  border-bottom:1px solid $blue;
+  background-color:$blue;
 }
 
 .abouttitle{
@@ -202,7 +202,6 @@ footer{
     width: 100%;
     box-sizing:border-box;
 
-
     img{
       object-fit:contain;
       display:block;
@@ -210,6 +209,11 @@ footer{
       height:100%;
       width: 100%;
     }
+  }
+
+  .image-box:hover{
+    transform:scale(1.03);
+    transition:.5s;
   }
 // project blurb
   p{
@@ -246,18 +250,20 @@ footer{
 
   .skills2{
     background-color:$blue;
-    animation: fadein 3s;
+    animation: fadein 4s;
   }
 
   .skills3{
     background-color:$green;
-    animation: fadein 4s;
+    animation: fadein 6s;
   }
 }
 
 .resume-title{
   @extend .title;
-  border-bottom:1px solid $green;
+  background-color:$green;
+  color:white;
+  text-align:center;
 }
 
 .resume-projects-container{
