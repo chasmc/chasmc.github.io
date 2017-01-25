@@ -2,6 +2,30 @@
 @import "mixins";
 
 // case study global
+.case-footer{
+  width:100%;
+  text-align:left;
+  margin:0;
+  position:relative;
+  left:8%;
+
+  .case-contact{
+    color:black;
+  }
+
+  .case-contact:hover{
+    color:$blue;
+    transition:.5s;
+    cursor:pointer;
+  }
+
+  .fa{
+    font-size:3rem;
+    margin:0 2% 5% 2%;
+    display:inline-block;
+  }
+}
+
 .main-content-casestudy{
   margin:0 10%;
   margin-bottom:5%;
