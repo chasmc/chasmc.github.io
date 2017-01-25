@@ -42,14 +42,16 @@
 .challengescontainer {
   padding: 0 0 5% 0;
   box-sizing: border-box; }
-  .challengescontainer .challengestext {
+  .challengescontainer .challengestext, .challengescontainer .summarytext {
     clear: both;
     font-family: source sans pro;
-    font-weight: 100;
+    font-weight: 500;
     font-size: 20px;
     margin: 3% 10% 5% 0;
     float: left;
     width: 60%; }
+  .challengescontainer .summarytext {
+    width: 70%; }
 
 .bikescreen {
   height: 250px;
@@ -309,7 +311,7 @@ footer {
   .maincontent-about .about-image {
     float: left;
     height: 15.98rem;
-    margin-right: 1.2%; }
+    margin-right: 1.5%; }
   .maincontent-about .about-text {
     text-align: center;
     text-transform: uppercase;
@@ -318,7 +320,7 @@ footer {
     font-size: 25px;
     text-transform: none;
     text-align: left;
-    font-weight: 200;
+    font-weight: 500;
     font-size: 25px;
     margin: 0; }
 
@@ -373,10 +375,11 @@ footer {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 900;
     font-size: 25px;
-    font-weight: 400;
-    font-size: 15px;
+    font-weight: 500;
+    font-size: 16px;
     margin-top: 0;
-    font-style: italic; }
+    font-style: italic;
+    text-transform: none; }
 
 .resume-name {
   font-size: 30px;
@@ -439,7 +442,7 @@ footer {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 900;
     font-size: 25px;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 20px;
     text-align: left;
     text-transform: none;
@@ -450,7 +453,7 @@ footer {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 900;
     font-size: 25px;
-    font-size: 16px;
+    font-size: 20px;
     text-align: left;
     text-transform: none;
     margin-top: 0;

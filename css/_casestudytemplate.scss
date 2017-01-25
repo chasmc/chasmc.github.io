@@ -62,11 +62,16 @@
   .challengestext{
     clear:both;
     font-family:source sans pro;
-    font-weight:100;
+    font-weight:500;
     font-size:20px;
     margin:3% 10% 5% 0;
     float:left;
     width:60%;
+  }
+
+  .summarytext{
+    @extend .challengestext;
+    width:70%;
   }
 }
 // end case study global
@@ -165,5 +170,5 @@
 }
 
 .bikemd-challenges-button h4:hover, .branchless-challenges-button h4:hover, .goodreads-challenges-button h4:hover, .work-button h4:hover{
-  @include button-hoverstyles
+  @include button-hoverstyles;
 }
