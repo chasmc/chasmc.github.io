@@ -261,6 +261,12 @@ footer{
 }
 
 // resume
+.resume-name{
+  @extend .title-casestudy;
+  font-size:30px;
+  margin-bottom:1%;
+}
+
 .main-content-resume{
   margin:0 10%;
   margin-bottom:5%;
@@ -346,15 +352,17 @@ footer{
 
 .resume-footer{
   width:100%;
-  text-align:center;
-  margin:3% 0;
+  text-align:left;
+  margin:0;
+  position:relative;
+  left:-1.3%;
 
-  .contact{
+  .resume-contact{
     color:black;
   }
 
-  .contact:hover{
-    color:$yellow;
+  .resume-contact:hover{
+    color:$green;
     transition:.5s;
     cursor:pointer;
   }
@@ -367,7 +375,7 @@ footer{
 }
 
 
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
+// @keyframes fadein {
+//     from { opacity: 0; }
+//     to   { opacity: 1; }
+// }

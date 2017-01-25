@@ -2,14 +2,14 @@
   margin: 0 10%;
   margin-bottom: 5%; }
 
-.title-casestudy {
+.title-casestudy, .resume-name {
   text-align: center;
   margin-bottom: 5%;
   text-transform: uppercase;
   font-family: source sans pro;
   font-size: 25px;
   font-weight: 900; }
-  .title-casestudy .casestudy {
+  .title-casestudy .casestudy, .resume-name .casestudy {
     font-family: source sans pro;
     font-weight: 100; }
 
@@ -363,6 +363,10 @@ footer {
     margin-top: 0;
     font-style: italic; }
 
+.resume-name {
+  font-size: 30px;
+  margin-bottom: 1%; }
+
 .main-content-resume {
   margin: 0 10%;
   margin-bottom: 5%; }
@@ -449,23 +453,19 @@ footer {
 
 .resume-footer {
   width: 100%;
-  text-align: center;
-  margin: 3% 0; }
-  .resume-footer .contact {
+  text-align: left;
+  margin: 0;
+  position: relative;
+  left: -1.3%; }
+  .resume-footer .resume-contact {
     color: black; }
-  .resume-footer .contact:hover {
-    color: #ffdd00;
+  .resume-footer .resume-contact:hover {
+    color: #009f50;
     transition: .5s;
     cursor: pointer; }
   .resume-footer .fa {
     font-size: 3rem;
     margin: 0 2% 5% 2%;
     display: inline-block; }
-
-@keyframes fadein {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
 
 /*# sourceMappingURL=style.css.map */
