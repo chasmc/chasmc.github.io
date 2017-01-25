@@ -232,7 +232,7 @@ footer{
 }
 
 .skillscontainer{
-  padding-left:3%;
+  padding-left:10%;
 
   .skills{
     display:inline-block;
@@ -248,17 +248,17 @@ footer{
     }
   }
 
-  .skills1{
-    animation: fadein 2s;
-  }
-
-  .skills2{
-    animation: fadein 3s;
-  }
-
-  .skills3{
-    animation: fadein 5s;
-  }
+  // .skills1{
+  //   animation: fadein 1s;
+  // }
+  //
+  // .skills2{
+  //   animation: fadein 2s;
+  // }
+  //
+  // .skills3{
+  //   animation: fadein 3s;
+  // }
 }
 
 .resume-title{
@@ -296,20 +296,28 @@ footer{
     .resume-info{
       margin:0;
       @include fontstyle;
-      font-weight:400;
+      font-weight:200;
       font-size:20px;
       text-align:left;
       text-transform:none;
       font-style:italic;
-      color:$green;
     }
 
     .resume-role{
       @include fontstyle;
+      font-size:16px;
       text-align:left;
       text-transform:none;
-      font-size:20px;
-      margin-top:1%;
+      margin-top:0;
+      color:$green;
+    }
+
+    .resume-tools{
+      margin:0;
+      @include fontstyle;
+      font-size:16px;
+      text-align:left;
+      text-transform:none;
     }
   }
 }
