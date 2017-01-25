@@ -199,7 +199,7 @@ header .nav {
 footer {
   width: 100%;
   text-align: center;
-  margin: 3% 0; }
+  margin-top: 8%; }
   footer .contact {
     color: black; }
   footer .contact:hover {
