@@ -330,7 +330,7 @@ footer {
 .about-footer {
   width: 92%;
   text-align: right;
-  margin: 2% 0; }
+  margin: 21% 0 0 0; }
   .about-footer .contact {
     color: black; }
   .about-footer .contact:hover {
@@ -342,7 +342,7 @@ footer {
     margin: 0 2% 5% 2%;
     display: inline-block; }
 
-.maincontent-work, .maincontent-about, .maincontent-contact {
+.maincontent-work, .maincontent-about, .maincontent-resume {
   margin: 0 10%; }
 
 .homepage-grid {
@@ -500,7 +500,10 @@ footer {
     right: 2.5%; }
 
   .headertemplate .navtemplate .mainnav {
-    margin-left: 42%; } }
+    margin-left: 42%; }
+
+  .case-footer {
+    margin-left: 1.5%; } }
 @media (max-width: 585px) {
   header .logo {
     height: 150px; }
@@ -622,51 +625,53 @@ footer {
     display: inline-block;
     width: 45%;
     position: static;
-    margin: 0 25%; }
+    margin: 0 25%;
+    margin-bottom: 5%; }
 
   .bikescreen {
     width: 98%;
-    height: auto; } }
-.branchless-example-container {
-  padding: 0; }
+    height: auto; }
 
-.wireframes {
-  height: auto;
-  width: 100%;
-  margin: 0; }
+  .branchless-example-container {
+    padding: 0; }
 
-.mockups {
-  height: auto;
-  width: 100%;
-  margin: 5% 0; }
+  .wireframes {
+    height: auto;
+    width: 100%;
+    margin: 0; }
 
-.branchless-challenges-button h4 {
-  display: inline-block;
-  width: 45%;
-  position: static;
-  margin: 2% 25%; }
+  .mockups {
+    height: auto;
+    width: 100%;
+    margin: 5% 0; }
 
-.goodreads-wireframes {
-  height: auto;
-  width: 100%;
-  margin: 5% 2% 0 2%; }
+  .branchless-challenges-button h4 {
+    display: inline-block;
+    width: 45%;
+    position: static;
+    margin: 2% 25%; }
 
-.goodreads-logo {
-  height: auto;
-  width: 100%;
-  display: block;
-  margin: 5% auto; }
+  .goodreads-wireframes {
+    height: auto;
+    width: 100%;
+    margin: 5% 2% 0 2%; }
 
-.goodreads-mockup {
-  height: auto;
-  width: 100%;
-  display: block;
-  margin: 5% auto; }
+  .goodreads-logo {
+    height: auto;
+    width: 100%;
+    display: block;
+    margin: 5% auto; }
 
-.goodreads-challenges-button h4 {
-  display: inline-block;
-  width: 45%;
-  position: static;
-  margin: 2% 25%; }
+  .goodreads-mockup {
+    height: auto;
+    width: 100%;
+    display: block;
+    margin: 5% auto; }
+
+  .goodreads-challenges-button h4 {
+    display: inline-block;
+    width: 45%;
+    position: static;
+    margin: 2% 25%; } }
 
 /*# sourceMappingURL=style.css.map */
