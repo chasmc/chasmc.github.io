@@ -86,7 +86,7 @@ footer{
   top:0;
   background:linear-gradient(
     rgba(white, 1),
-    rgba(white, .97)
+    rgba(white, .99)
   );
   position:fixed;
   z-index:100;
@@ -362,7 +362,283 @@ footer{
     display:inline-block;
   }
 
-// @keyframes fadein {
-//     from { opacity: 0; }
-//     to   { opacity: 1; }
-// }
+
+
+// media queries
+@media (min-width:586) and (max-width:767px){
+
+// landing page
+  header{
+
+    .logo{
+      height:250px;
+    }
+
+    .nav{
+
+      .landingtitles{
+        padding-bottom:2%;
+        font-size:30px;
+        margin-top:4%;
+      }
+
+      .landing-about{
+        position:relative;
+        right:2.2%;
+      }
+
+      .landing-work{
+        position:relative;
+        right:1.5%;
+      }
+
+      .landing-resume{
+        position:relative;
+        right:2.5%;
+      }
+    }
+  }
+
+// header nav template
+  .headertemplate .navtemplate .mainnav{
+      margin-left: 42%;
+  }
+}
+
+@media (max-width:585px){
+// landing page
+  header{
+
+    .logo{
+      height:150px;
+    }
+
+    .nav{
+
+      .landingtitles{
+        padding:0 5%;
+        padding-bottom:8%;
+        font-size:20px;
+        margin-top:4%;
+      }
+
+      .landing-about{
+        position:relative;
+        right:10.2%;
+      }
+
+      .landing-work{
+        position:relative;
+        right:4.5%;
+      }
+
+      .landing-resume{
+        position:relative;
+        right:.5%;
+      }
+    }
+  }
+
+  footer{
+    margin-top:20%;
+  }
+
+  // header nav template
+  .headertemplate{
+    height:147px;
+  }
+
+  .headertemplate .navtemplate {
+    margin-left: 9%;
+}
+
+  .headertemplate .navtemplate .mainnav {
+      margin-left: -12%;
+      margin-top:27%;
+      font-size:20px;
+  }
+
+  .worktitle{
+    display:none;
+  }
+
+  .homepage-grid{
+    float: left;
+    width: 100%;
+    margin:0 1% 2% 1%;
+    height:auto;
+    padding:2% 0;
+    box-sizing:border-box;
+  }
+
+  .case-footer{
+    position:static;
+    text-align:center;
+    width:70%;
+    margin:0 auto;
+    margin-top:50%;
+
+    .fa{
+      font-size:2rem;
+      padding:5%;
+      display:inline-block;
+    }
+  }
+
+// resume
+  .main-content-resume{
+    margin:0 5%;
+    margin-bottom:5%;
+  }
+
+  .resume-title{
+    margin-bottom:7%;
+  }
+
+  .skillscontainer{
+    padding-left:15%;
+
+    .skills{
+      display:block;
+      width:50%;
+
+      li{
+        font-size:25px;
+      }
+    }
+  }
+
+  .resume-projects-container .project{
+    border-left:0px;
+  }
+
+  .maincontent-about{
+
+    .about-image{
+      float:none;
+      width:100%;
+      height:24.98rem;
+    }
+
+    .about-text{
+      font-weight:300;
+      font-size:25px;
+      margin:0;
+    }
+  }
+
+  .abouttitle{
+    color:black;
+    text-align:center;
+    text-transform:capitalize;
+    font-size:20px;
+    margin:50% 0 0 0;
+  }
+
+  .about-footer{
+    margin-top:0;
+  }
+
+// case studies global
+.main-content-casestudy{
+  margin:0 5%;
+}
+
+.title{
+  margin-top:30%;
+}
+
+.title-casestudy{
+  font-size:25px;
+}
+
+.challengescontainer{
+  padding:0 0 5% 0;
+  box-sizing:border-box;
+
+  .challengestext{
+    font-weight:500;
+    font-size:20px;
+    margin:3% 10% 5% 0;
+    width:100%;
+  }
+
+  .summarytext{
+    width:100%;
+    margin-bottom:15%;
+  }
+
+  .bikemd-challenges-button h4 {
+    display:inline-block;
+    width: 45%;
+    position:static;
+    margin:2% 25%;
+  }
+}
+
+.work-button h4{
+  display:inline-block;
+  width: 45%;
+  position:static;
+  margin:0 25%;
+}
+
+// bikemd case
+  .bikescreen{
+    width:98%;
+    height:auto;
+  }
+}
+
+// branchless case
+.branchless-example-container{
+  padding:0;
+}
+
+.wireframes{
+  height:auto;
+  width:100%;
+  margin:0;
+}
+
+.mockups{
+  height:auto;
+  width:100%;
+  margin:5% 0;
+}
+
+.branchless-challenges-button h4{
+  display:inline-block;
+  width: 45%;
+  position:static;
+  margin:2% 25%;
+}
+// end branchless
+
+// goodreads case
+.goodreads-wireframes{
+  height:auto;
+  width:100%;
+  margin:5% 2% 0 2%;
+}
+
+.goodreads-logo{
+  height:auto;
+  width:100%;
+  display:block;
+  margin:5% auto;
+}
+
+.goodreads-mockup{
+  height:auto;
+  width:100%;
+  display:block;
+  margin:5% auto;
+}
+
+.goodreads-challenges-button h4{
+  display:inline-block;
+  width: 45%;
+  position:static;
+  margin:2% 25%;
+}
