@@ -351,15 +351,6 @@ footer{
   }
 }
 
-.resume-footer{
-  width:92%;
-  text-align:left;
-  margin:0 0 0 8%;
-
-  .resume-contact{
-    color:black;
-  }
-
   .resume-contact:hover{
     color:$green;
     transition:.5s;
@@ -371,8 +362,6 @@ footer{
     margin:0 2% 5% 2%;
     display:inline-block;
   }
-}
-
 
 // @keyframes fadein {
 //     from { opacity: 0; }

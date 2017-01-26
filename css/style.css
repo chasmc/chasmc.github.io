@@ -1,17 +1,20 @@
 .case-footer {
-  width: 92%;
   text-align: left;
-  margin: 0 0 0 8%; }
+  position: fixed;
+  top: 35%;
+  margin-left: 3%;
+  width: 4%; }
   .case-footer .case-contact {
-    color: black; }
+    color: black;
+    text-decoration: none; }
   .case-footer .case-contact:hover {
     color: #00a1e5;
     transition: .5s;
     cursor: pointer; }
   .case-footer .fa {
     font-size: 3rem;
-    margin: 0 2% 5% 2%;
-    display: inline-block; }
+    padding: 10% 0;
+    display: block; }
 
 .main-content-casestudy {
   margin: 0 10%;
@@ -469,19 +472,14 @@ footer {
     text-align: left;
     text-transform: none; }
 
-.resume-footer {
-  width: 92%;
-  text-align: left;
-  margin: 0 0 0 8%; }
-  .resume-footer .resume-contact {
-    color: black; }
-  .resume-footer .resume-contact:hover {
-    color: #009f50;
-    transition: .5s;
-    cursor: pointer; }
-  .resume-footer .fa {
-    font-size: 3rem;
-    margin: 0 2% 5% 2%;
-    display: inline-block; }
+.resume-contact:hover {
+  color: #009f50;
+  transition: .5s;
+  cursor: pointer; }
+
+.fa {
+  font-size: 3rem;
+  margin: 0 2% 5% 2%;
+  display: inline-block; }
 
 /*# sourceMappingURL=style.css.map */
