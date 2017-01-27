@@ -4,6 +4,10 @@
 
 .landing-body{
   margin:0;
+
+  .branch{
+    display:none;
+  }
 }
 
 body{
@@ -14,15 +18,14 @@ body{
 header{
 
 .logo-container{
-  display:inline-block;
   text-align:center;
   height:auto;
 
   .logo{
-    height:300px;
+    height:23vw;
     display:inline-block;
     margin:0 auto;
-    margin-top:100px;
+    margin-top:8%;
   }
 
   .square1:hover{
@@ -41,7 +44,7 @@ header{
   }
 
   .logo-name{
-    height:57.2px;
+    height:4.4vw;
     margin-top:1%;
   }
 }
@@ -395,44 +398,26 @@ footer{
 
 // media queries
 @media (min-width:768px) and (max-width:1026px){
+
   .headertemplate .navtemplate .mainnav {
     margin-left: 40%;
   }
 }
 
 @media (min-width:586px) and (max-width:767px){
-
-// landing page
+// landing
   header{
 
+  .logo-container{
+    text-align:center;
+    height:auto;
+
     .logo{
-      height:250px;
-    }
-
-    .nav{
-
-      .landingtitles{
-        padding-bottom:2%;
-        font-size:30px;
-        margin-top:4%;
-      }
-
-      .landing-about{
-        position:relative;
-        right:2.2%;
-      }
-
-      .landing-work{
-        position:relative;
-        right:1.5%;
-      }
-
-      .landing-resume{
-        position:relative;
-        right:2.5%;
-      }
+      height:30vw;
+      margin-top:40%;
     }
   }
+}
 // header nav template
   .headertemplate .navtemplate .mainnav {
     margin-left: 40%;
@@ -446,41 +431,26 @@ footer{
 
 
 @media (max-width:585px){
-// landing page
+// landing
   header{
 
+  .logo-container{
+    text-align:center;
+    height:auto;
+
     .logo{
-      height:150px;
+      height:30vw;
+      margin-top:40%;
     }
 
-    .nav{
-
-      .landingtitles{
-        padding:0 5%;
-        padding-bottom:8%;
-        font-size:20px;
-        margin-top:4%;
-      }
-
-      .landing-about{
-        position:relative;
-        right:10.2%;
-      }
-
-      .landing-work{
-        position:relative;
-        right:4.5%;
-      }
-
-      .landing-resume{
-        position:relative;
-        right:.5%;
-      }
+    .logo-name{
+      height:5.5vw;
     }
   }
-
+}
+// header nav template
   footer{
-    margin-top:20%;
+    margin-top:10%;
   }
 
   // header nav template

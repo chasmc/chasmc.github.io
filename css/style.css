@@ -179,19 +179,20 @@
 
 .landing-body {
   margin: 0; }
+  .landing-body .branch {
+    display: none; }
 
 body {
   margin: 150px 0 0 0; }
 
 header .logo-container {
-  display: inline-block;
   text-align: center;
   height: auto; }
   header .logo-container .logo {
-    height: 300px;
+    height: 23vw;
     display: inline-block;
     margin: 0 auto;
-    margin-top: 100px; }
+    margin-top: 8%; }
   header .logo-container .square1:hover, header .logo-container .square2:hover, header .logo-container .square3:hover {
     background-color: #ffdd00;
     border-radius: 7%; }
@@ -200,7 +201,7 @@ header .logo-container {
   header .logo-container .square3:hover {
     background-color: #009f50; }
   header .logo-container .logo-name {
-    height: 57.2px;
+    height: 4.4vw;
     margin-top: 1%; }
 
 footer {
@@ -378,21 +379,12 @@ footer {
   .headertemplate .navtemplate .mainnav {
     margin-left: 40%; } }
 @media (min-width: 586px) and (max-width: 767px) {
-  header .logo {
-    height: 250px; }
-  header .nav .landingtitles {
-    padding-bottom: 2%;
-    font-size: 30px;
-    margin-top: 4%; }
-  header .nav .landing-about {
-    position: relative;
-    right: 2.2%; }
-  header .nav .landing-work {
-    position: relative;
-    right: 1.5%; }
-  header .nav .landing-resume {
-    position: relative;
-    right: 2.5%; }
+  header .logo-container {
+    text-align: center;
+    height: auto; }
+    header .logo-container .logo {
+      height: 30vw;
+      margin-top: 40%; }
 
   .headertemplate .navtemplate .mainnav {
     margin-left: 40%; }
@@ -400,25 +392,17 @@ footer {
   .case-footer {
     margin-left: 1.5%; } }
 @media (max-width: 585px) {
-  header .logo {
-    height: 150px; }
-  header .nav .landingtitles {
-    padding: 0 5%;
-    padding-bottom: 8%;
-    font-size: 20px;
-    margin-top: 4%; }
-  header .nav .landing-about {
-    position: relative;
-    right: 10.2%; }
-  header .nav .landing-work {
-    position: relative;
-    right: 4.5%; }
-  header .nav .landing-resume {
-    position: relative;
-    right: .5%; }
+  header .logo-container {
+    text-align: center;
+    height: auto; }
+    header .logo-container .logo {
+      height: 30vw;
+      margin-top: 40%; }
+    header .logo-container .logo-name {
+      height: 5.5vw; }
 
   footer {
-    margin-top: 20%; }
+    margin-top: 10%; }
 
   .headertemplate {
     height: 147px; }
