@@ -389,7 +389,7 @@ footer {
   .headertemplate .navtemplate .mainnav {
     margin-left: 40%; }
 
-  .case-footer {
+  .case-footer, .about-footer {
     margin-left: 1.5%; } }
 @media (max-width: 585px) {
   header .logo-container {
