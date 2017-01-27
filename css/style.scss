@@ -13,46 +13,72 @@ body{
 // landing page
 header{
 
+.logo-container{
+  display:inline-block;
+  text-align:center;
+  height:auto;
+
   .logo{
-    height:350px;
-    display:block;
+    height:300px;
+    display:inline-block;
     margin:0 auto;
     margin-top:100px;
   }
 
-  .nav{
-    margin:0;
-    text-align:center;
-    position:relative;
-    top:160px;
-
-    .landingtitles{
-      list-style-type:none;
-      display:inline-block;
-      padding:0 7.3%;
-      @include fontstyle;
-      font-size:35px;
-
-      a{
-        @include linkstyle;
-      }
-
-      a:hover{
-        color:white;
-        transition:.5s;
-      }
-    }
-
-    .landing-work{
-      position:relative;
-      right:.5%;
-    }
-
-    .landing-resume{
-      position:relative;
-      right:2.5%;
-    }
+  .square1:hover{
+    background-color:$yellow;
+    border-radius:7%;
   }
+
+  .square2:hover{
+    background-color:$blue;
+    @extend .square1
+  }
+
+  .square3:hover{
+    background-color:$green;
+    @extend .square1
+  }
+
+  .logo-name{
+    height:57.2px;
+    margin-top:1%;
+  }
+}
+
+  // .nav{
+  //   margin:0;
+  //   text-align:center;
+  //   position:relative;
+  //   top:160px;
+  //
+  //   .landingtitles{
+  //     list-style-type:none;
+  //     display:inline-block;
+  //     padding:0 7.3%;
+  //     @include fontstyle;
+  //     font-size:35px;
+  //
+  //     a{
+  //       @include linkstyle;
+  //     }
+  //
+  //     a:hover{
+  //       color:white;
+  //       transition:.5s;
+  //     }
+  //   }
+  //
+  //   .landing-work{
+  //     position:relative;
+  //     right:.5%;
+  //   }
+  //
+  //   .landing-resume{
+  //     position:relative;
+  //     right:2.5%;
+  //   }
+  // }
 }
 
 footer{
@@ -193,15 +219,18 @@ footer{
 }
 
 .about-footer{
-  width:92%;
-  text-align:right;
-  margin:21% 0 0 0;
+  text-align:left;
+  position:fixed;
+  top:35%;
+  margin-left:3%;
+  width:4%;
 
-  .contact{
+  .about-contact{
     color:black;
+    text-decoration:none;
   }
 
-  .contact:hover{
+  .about-contact:hover{
     color:$yellow;
     transition:.5s;
     cursor:pointer;
@@ -209,8 +238,8 @@ footer{
 
   .fa{
     font-size:3rem;
-    margin:0 2% 5% 2%;
-    display:inline-block;
+    padding:10% 0;
+    display:block;
   }
 }
 
@@ -261,111 +290,117 @@ footer{
   }
 }
 // resume
-.resume-name{
-  @extend .title-casestudy;
-  font-size:30px;
-  margin-bottom:1%;
-}
-
-.main-content-resume{
-  margin:0 10%;
-  margin-bottom:5%;
-}
-
-.skillscontainer{
-  padding-left:15%;
-
-  .skills{
-    display:inline-block;
-    width:10%;
-    margin:0;
-
-    li{
-      @include liststylecase;
-      font-weight:900;
-      text-align:center;
-    }
-  }
-}
-
-.resume-title{
-  text-transform:uppercase;
-  font-family:source sans pro;
-  font-weight:900;
-  font-size:30px;
-  border-bottom:3px solid $green;
-  color:black;
-  text-align:left;
-  margin-top:3%;
-  margin-bottom:2%;
-}
-
-.resume-projects-container{
-
-  .project{
-    display:block;
-    padding:0 5%;
-    padding-left:1%;
-    box-sizing:border-box;
-    text-align:left;
-    width:100%;
-    margin:5% 0;
-    border-left:1px solid black;
-    margin-bottom:10%;
-
-    .subtitle{
-      @include fontstyle;
-      font-weight:900;
-      text-align:left;
-      margin:0;
-      padding:0;
-    }
-
-    .resume-info{
-      margin:0;
-      @include fontstyle;
-      font-weight:500;
-      font-size:20px;
-      text-align:left;
-      text-transform:none;
-      font-style:italic;
-    }
-
-    .resume-role{
-      @include fontstyle;
-      font-size:20px;
-      text-align:left;
-      text-transform:none;
-      margin-top:0;
-      color:$green;
-    }
-
-    .resume-tools{
-      margin:0;
-      @include fontstyle;
-      font-size:16px;
-      text-align:left;
-      text-transform:none;
-    }
-  }
-}
-
-  .resume-contact:hover{
-    color:$green;
-    transition:.5s;
-    cursor:pointer;
-  }
-
-  .fa{
-    font-size:3rem;
-    margin:0 2% 5% 2%;
-    display:inline-block;
-  }
+// .resume-name{
+//   @extend .title-casestudy;
+//   font-size:30px;
+//   margin-bottom:1%;
+// }
+//
+// .main-content-resume{
+//   margin:0 10%;
+//   margin-bottom:5%;
+// }
+//
+// .skillscontainer{
+//   padding-left:15%;
+//
+//   .skills{
+//     display:inline-block;
+//     width:10%;
+//     margin:0;
+//
+//     li{
+//       @include liststylecase;
+//       font-weight:900;
+//       text-align:center;
+//     }
+//   }
+// }
+//
+// .resume-title{
+//   text-transform:uppercase;
+//   font-family:source sans pro;
+//   font-weight:900;
+//   font-size:30px;
+//   border-bottom:3px solid $green;
+//   color:black;
+//   text-align:left;
+//   margin-top:3%;
+//   margin-bottom:2%;
+// }
+//
+// .resume-projects-container{
+//
+//   .project{
+//     display:block;
+//     padding:0 5%;
+//     padding-left:1%;
+//     box-sizing:border-box;
+//     text-align:left;
+//     width:100%;
+//     margin:5% 0;
+//     border-left:1px solid black;
+//     margin-bottom:10%;
+//
+//     .subtitle{
+//       @include fontstyle;
+//       font-weight:900;
+//       text-align:left;
+//       margin:0;
+//       padding:0;
+//     }
+//
+//     .resume-info{
+//       margin:0;
+//       @include fontstyle;
+//       font-weight:500;
+//       font-size:20px;
+//       text-align:left;
+//       text-transform:none;
+//       font-style:italic;
+//     }
+//
+//     .resume-role{
+//       @include fontstyle;
+//       font-size:20px;
+//       text-align:left;
+//       text-transform:none;
+//       margin-top:0;
+//       color:$green;
+//     }
+//
+//     .resume-tools{
+//       margin:0;
+//       @include fontstyle;
+//       font-size:16px;
+//       text-align:left;
+//       text-transform:none;
+//     }
+//   }
+// }
+//
+//   .resume-contact:hover{
+//     color:$green;
+//     transition:.5s;
+//     cursor:pointer;
+//   }
+//
+//   .fa{
+//     font-size:3rem;
+//     margin:0 2% 5% 2%;
+//     display:inline-block;
+//   }
 
 
 
 // media queries
-@media (min-width:586) and (max-width:767px){
+@media (min-width:768px) and (max-width:1026px){
+  .headertemplate .navtemplate .mainnav {
+    margin-left: 40%;
+  }
+}
+
+@media (min-width:586px) and (max-width:767px){
 
 // landing page
   header{
@@ -398,10 +433,9 @@ footer{
       }
     }
   }
-
-  // header nav template
+// header nav template
   .headertemplate .navtemplate .mainnav {
-    margin-left: 42%;
+    margin-left: 40%;
   }
 
   .case-footer{

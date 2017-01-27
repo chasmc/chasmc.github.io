@@ -20,14 +20,14 @@
   margin: 0 10%;
   margin-bottom: 5%; }
 
-.title-casestudy, .resume-name {
+.title-casestudy {
   text-align: center;
   margin-bottom: 5%;
   text-transform: uppercase;
   font-family: source sans pro;
   font-size: 30px;
   font-weight: 900; }
-  .title-casestudy .casestudy, .resume-name .casestudy {
+  .title-casestudy .casestudy {
     font-family: source sans pro;
     font-weight: 100; }
 
@@ -183,38 +183,25 @@
 body {
   margin: 150px 0 0 0; }
 
-header .logo {
-  height: 350px;
-  display: block;
-  margin: 0 auto;
-  margin-top: 100px; }
-header .nav {
-  margin: 0;
+header .logo-container {
+  display: inline-block;
   text-align: center;
-  position: relative;
-  top: 160px; }
-  header .nav .landingtitles {
-    list-style-type: none;
+  height: auto; }
+  header .logo-container .logo {
+    height: 300px;
     display: inline-block;
-    padding: 0 7.3%;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 900;
-    font-size: 25px;
-    font-size: 35px; }
-    header .nav .landingtitles a {
-      text-decoration: none;
-      color: black; }
-    header .nav .landingtitles a:hover {
-      color: white;
-      transition: .5s; }
-  header .nav .landing-work {
-    position: relative;
-    right: .5%; }
-  header .nav .landing-resume {
-    position: relative;
-    right: 2.5%; }
+    margin: 0 auto;
+    margin-top: 100px; }
+  header .logo-container .square1:hover, header .logo-container .square2:hover, header .logo-container .square3:hover {
+    background-color: #ffdd00;
+    border-radius: 7%; }
+  header .logo-container .square2:hover {
+    background-color: #00a1e5; }
+  header .logo-container .square3:hover {
+    background-color: #009f50; }
+  header .logo-container .logo-name {
+    height: 57.2px;
+    margin-top: 1%; }
 
 footer {
   width: 100%;
@@ -328,19 +315,22 @@ footer {
     margin: 0; }
 
 .about-footer {
-  width: 92%;
-  text-align: right;
-  margin: 21% 0 0 0; }
-  .about-footer .contact {
-    color: black; }
-  .about-footer .contact:hover {
+  text-align: left;
+  position: fixed;
+  top: 35%;
+  margin-left: 3%;
+  width: 4%; }
+  .about-footer .about-contact {
+    color: black;
+    text-decoration: none; }
+  .about-footer .about-contact:hover {
     color: #ffdd00;
     transition: .5s;
     cursor: pointer; }
   .about-footer .fa {
     font-size: 3rem;
-    margin: 0 2% 5% 2%;
-    display: inline-block; }
+    padding: 10% 0;
+    display: block; }
 
 .maincontent-work, .maincontent-about, .maincontent-resume {
   margin: 0 10%; }
@@ -384,105 +374,10 @@ footer {
     font-style: italic;
     text-transform: none; }
 
-.resume-name {
-  font-size: 30px;
-  margin-bottom: 1%; }
-
-.main-content-resume {
-  margin: 0 10%;
-  margin-bottom: 5%; }
-
-.skillscontainer {
-  padding-left: 15%; }
-  .skillscontainer .skills {
-    display: inline-block;
-    width: 10%;
-    margin: 0; }
-    .skillscontainer .skills li {
-      list-style-type: none;
-      font-family: 'Source Sans Pro', sans-serif;
-      padding: 10px 0;
-      font-weight: 100;
-      font-size: 20px;
-      font-weight: 900;
-      text-align: center; }
-
-.resume-title {
-  text-transform: uppercase;
-  font-family: source sans pro;
-  font-weight: 900;
-  font-size: 30px;
-  border-bottom: 3px solid #009f50;
-  color: black;
-  text-align: left;
-  margin-top: 3%;
-  margin-bottom: 2%; }
-
-.resume-projects-container .project {
-  display: block;
-  padding: 0 5%;
-  padding-left: 1%;
-  box-sizing: border-box;
-  text-align: left;
-  width: 100%;
-  margin: 5% 0;
-  border-left: 1px solid black;
-  margin-bottom: 10%; }
-  .resume-projects-container .project .subtitle {
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 900;
-    font-size: 25px;
-    font-weight: 900;
-    text-align: left;
-    margin: 0;
-    padding: 0; }
-  .resume-projects-container .project .resume-info {
-    margin: 0;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 900;
-    font-size: 25px;
-    font-weight: 500;
-    font-size: 20px;
-    text-align: left;
-    text-transform: none;
-    font-style: italic; }
-  .resume-projects-container .project .resume-role {
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 900;
-    font-size: 25px;
-    font-size: 20px;
-    text-align: left;
-    text-transform: none;
-    margin-top: 0;
-    color: #009f50; }
-  .resume-projects-container .project .resume-tools {
-    margin: 0;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 900;
-    font-size: 25px;
-    font-size: 16px;
-    text-align: left;
-    text-transform: none; }
-
-.resume-contact:hover {
-  color: #009f50;
-  transition: .5s;
-  cursor: pointer; }
-
-.fa {
-  font-size: 3rem;
-  margin: 0 2% 5% 2%;
-  display: inline-block; }
-
-@media (min-width: 586) and (max-width: 767px) {
+@media (min-width: 768px) and (max-width: 1026px) {
+  .headertemplate .navtemplate .mainnav {
+    margin-left: 40%; } }
+@media (min-width: 586px) and (max-width: 767px) {
   header .logo {
     height: 250px; }
   header .nav .landingtitles {
@@ -500,7 +395,7 @@ footer {
     right: 2.5%; }
 
   .headertemplate .navtemplate .mainnav {
-    margin-left: 42%; }
+    margin-left: 40%; }
 
   .case-footer {
     margin-left: 1.5%; } }
@@ -601,7 +496,7 @@ footer {
   .title {
     margin-top: 30%; }
 
-  .title-casestudy, .resume-name {
+  .title-casestudy {
     font-size: 25px; }
 
   .challengescontainer {
