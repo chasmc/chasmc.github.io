@@ -446,6 +446,26 @@ footer{
     .logo-name{
       height:5.5vw;
     }
+
+    .square1{
+      background-color:$yellow;
+      border-radius:5%;
+    }
+
+    .square2{
+      background-color:$blue;
+      border-radius:5%;
+    }
+
+    .square3{
+      background-color:$green;
+      border-radius:5%;
+    }
+
+    .square1:hover, .square2:hover, .square3:hover{
+      background-color:white;
+      border-radius:5%;
+    }
   }
 }
 // header nav template
@@ -540,13 +560,23 @@ footer{
   .abouttitle{
     color:black;
     text-align:center;
-    text-transform:capitalize;
+    text-transform:uppercase;
     font-size:20px;
     margin:50% 0 0 0;
   }
 
   .about-footer{
-    margin-top:0;
+    position:static;
+    text-align:center;
+    width:70%;
+    margin:0 auto;
+    margin-top:1%;
+
+    .fa{
+      font-size:2rem;
+      padding:5%;
+      display:inline-block;
+    }
   }
 
 // case studies global

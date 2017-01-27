@@ -400,6 +400,18 @@ footer {
       margin-top: 40%; }
     header .logo-container .logo-name {
       height: 5.5vw; }
+    header .logo-container .square1, header .logo-container .square2:hover, header .logo-container .square3:hover {
+      background-color: #ffdd00;
+      border-radius: 5%; }
+    header .logo-container .square2 {
+      background-color: #00a1e5;
+      border-radius: 5%; }
+    header .logo-container .square3 {
+      background-color: #009f50;
+      border-radius: 5%; }
+    header .logo-container .square1:hover, header .logo-container .square2:hover, header .logo-container .square3:hover, header .logo-container .square2:hover, header .logo-container .square3:hover {
+      background-color: white;
+      border-radius: 5%; }
 
   footer {
     margin-top: 10%; }
@@ -467,12 +479,20 @@ footer {
   .abouttitle {
     color: black;
     text-align: center;
-    text-transform: capitalize;
+    text-transform: uppercase;
     font-size: 20px;
     margin: 50% 0 0 0; }
 
   .about-footer {
-    margin-top: 0; }
+    position: static;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 1%; }
+    .about-footer .fa {
+      font-size: 2rem;
+      padding: 5%;
+      display: inline-block; }
 
   .main-content-casestudy {
     margin: 0 5%; }
