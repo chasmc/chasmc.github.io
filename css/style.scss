@@ -200,14 +200,14 @@ footer{
 
 // about
 .maincontent-about{
-  margin-bottom:5%;
   padding:1% 0;
   border-top:3px solid $yellow;
   border-bottom:3px solid $yellow;
+  margin:0 10% 5% 10%;
 
   .about-image{
     float:left;
-    height:15.98rem;
+    height:28.98rem;
     margin-right:1.5%;
   }
 
@@ -247,7 +247,7 @@ footer{
 }
 
 // work main content
-.maincontent-work, .maincontent-about, .maincontent-resume{
+.maincontent-work, .maincontent-resume{
   margin:0 10%;
 }
 

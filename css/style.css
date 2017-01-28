@@ -295,13 +295,13 @@ footer {
   color: black; }
 
 .maincontent-about {
-  margin-bottom: 5%;
   padding: 1% 0;
   border-top: 3px solid #ffdd00;
-  border-bottom: 3px solid #ffdd00; }
+  border-bottom: 3px solid #ffdd00;
+  margin: 0 10% 5% 10%; }
   .maincontent-about .about-image {
     float: left;
-    height: 15.98rem;
+    height: 28.98rem;
     margin-right: 1.5%; }
   .maincontent-about .about-text {
     text-align: center;
@@ -333,7 +333,7 @@ footer {
     padding: 10% 0;
     display: block; }
 
-.maincontent-work, .maincontent-about, .maincontent-resume {
+.maincontent-work, .maincontent-resume {
   margin: 0 10%; }
 
 .homepage-grid {
