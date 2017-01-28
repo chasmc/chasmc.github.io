@@ -13,75 +13,53 @@
 body{
   margin:150px 0 0 0;
 }
-
 // landing page
 header{
 
-.logo-container{
-  text-align:center;
-  height:auto;
+  .logo-container{
+    text-align:center;
 
-  .logo{
-    height:23vw;
-    display:inline-block;
-    margin:0 auto;
-    margin-top:8%;
+    .logo{
+      height:23vw;
+      margin-top:8%;
+    }
+
+    .square1{
+      background-color:$yellow;
+      border-radius:7%;
+    }
+
+    .square2{
+      background-color:$blue;
+      @extend .square1
+    }
+
+    .square3{
+      background-color:$green;
+      @extend .square1
+    }
+
+    .square1:hover{
+      background-color:white;
+      border-radius:7%;
+      transition:1s;
+    }
+
+    .square2:hover{
+      background-color:white;
+      @extend .square1
+    }
+
+    .square3:hover{
+      background-color:white;
+      @extend .square1
+    }
+
+    .logo-name{
+      height:4.4vw;
+      margin-top:1%;
+    }
   }
-
-  .square1:hover{
-    background-color:$yellow;
-    border-radius:7%;
-  }
-
-  .square2:hover{
-    background-color:$blue;
-    @extend .square1
-  }
-
-  .square3:hover{
-    background-color:$green;
-    @extend .square1
-  }
-
-  .logo-name{
-    height:4.4vw;
-    margin-top:1%;
-  }
-}
-
-  // .nav{
-  //   margin:0;
-  //   text-align:center;
-  //   position:relative;
-  //   top:160px;
-  //
-  //   .landingtitles{
-  //     list-style-type:none;
-  //     display:inline-block;
-  //     padding:0 7.3%;
-  //     @include fontstyle;
-  //     font-size:35px;
-  //
-  //     a{
-  //       @include linkstyle;
-  //     }
-  //
-  //     a:hover{
-  //       color:white;
-  //       transition:.5s;
-  //     }
-  //   }
-  //
-  //   .landing-work{
-  //     position:relative;
-  //     right:.5%;
-  //   }
-  //
-  //   .landing-resume{
-  //     position:relative;
-  //     right:2.5%;
-  //   }
-  // }
 }
 
 footer{
