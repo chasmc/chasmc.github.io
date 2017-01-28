@@ -258,19 +258,32 @@ footer{
   height:auto;
   padding:2% 0;
   box-sizing:border-box;
+  position:relative;
+
+  .work-info{
+    position:absolute;
+    bottom:6%;
+    height:88%;
+    width:100%;
+    color:white;
+    background-color:rgba(black, .7);
+    padding-top:33%;
+    box-sizing:border-box;
+    transform:scale(0);
 
   h2{
     @include fontstyle;
     margin:5% 0 0 0;
   }
-
+}
   .image-box{
-    height:300px;
+    height:18.5rem;
     width: 100%;
     box-sizing:border-box;
 
     img{
-      object-fit:contain;
+      object-fit:cover;
+      object-position:top;
       display:block;
       margin:0 auto;
       height:100%;
@@ -278,10 +291,6 @@ footer{
     }
   }
 
-  .image-box:hover{
-    transform:scale(1.03);
-    transition:.5s;
-  }
 // project blurb
   p{
     @include fontstyle;
@@ -291,6 +300,16 @@ footer{
     font-style:italic;
     text-transform:none;
   }
+}
+
+.homepage-grid:hover h2{
+  color:$blue;
+  transition:.5s;
+}
+
+.homepage-grid:hover .work-info{
+  transform:scale(1);
+  transition:.5s;
 }
 // resume
 // .resume-name{
@@ -402,6 +421,18 @@ footer{
   .headertemplate .navtemplate .mainnav {
     margin-left: 40%;
   }
+
+  .maincontent-work .homepage-grid .work-info{
+    transform:scale(1);
+    transition:.5s;
+    height:40%;
+    padding:2% 0;
+    bottom:30%;
+
+    h2{
+      color:$blue;
+    }
+  }
 }
 
 @media (min-width:586px) and (max-width:767px){
@@ -426,9 +457,19 @@ footer{
   .case-footer, .about-footer{
     margin-left:1.5%;
   }
+
+  .maincontent-work .homepage-grid .work-info{
+    transform:scale(1);
+    transition:.1s;
+    height:40%;
+    padding:2% 0;
+    bottom:30%;
+
+    h2{
+      color:$blue;
+    }
+  }
 }
-
-
 
 @media (max-width:585px){
 // landing
@@ -468,12 +509,11 @@ footer{
     }
   }
 }
-// header nav template
+// icons
   footer{
     margin-top:10%;
   }
-
-  // header nav template
+// header nav template
   .headertemplate{
     height:147px;
   }
@@ -499,6 +539,20 @@ footer{
     height:auto;
     padding:2% 0;
     box-sizing:border-box;
+  }
+
+  .maincontent-work .homepage-grid .work-info{
+    transform:scale(1);
+    transition:.1s;
+    height:55%;
+    padding-top:17%;
+    bottom:9%;
+    background-color:rgba(black, .6);
+
+    h2{
+      color:$blue;
+      margin:0;
+    }
   }
 
   .case-footer{
