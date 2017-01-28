@@ -368,8 +368,7 @@ footer {
       margin: 5% 0 0 0; }
   .homepage-grid .image-box {
     height: 18.5rem;
-    width: 100%;
-    box-sizing: border-box; }
+    width: 100%; }
     .homepage-grid .image-box img {
       object-fit: cover;
       object-position: top;

@@ -257,7 +257,6 @@ footer{
   .image-box{
     height:18.5rem;
     width: 100%;
-    box-sizing:border-box;
 
     img{
       object-fit:cover;
@@ -268,7 +267,6 @@ footer{
       width: 100%;
     }
   }
-
 // project blurb
   p{
     @include fontstyle;
