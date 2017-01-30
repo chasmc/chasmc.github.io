@@ -190,21 +190,16 @@ header .logo-container {
   header .logo-container .logo {
     height: 23vw;
     margin-top: 8%; }
-  header .logo-container .square1, header .logo-container .square2, header .logo-container .square3, header .logo-container .square2:hover, header .logo-container .square3:hover {
+  header .logo-container .square1, header .logo-container .square2, header .logo-container .square3 {
     background-color: #ffdd00;
     border-radius: 7%; }
   header .logo-container .square2 {
     background-color: #00a1e5; }
   header .logo-container .square3 {
     background-color: #009f50; }
-  header .logo-container .square1:hover, header .logo-container .square2:hover, header .logo-container .square3:hover {
-    background-color: white;
-    border-radius: 7%;
+  header .logo-container .square1:hover, header .logo-container .square2:hover, header .logo-container .square3:hover, header .logo-container .square2:hover, header .logo-container .square3:hover {
+    transform: scale(1.05);
     transition: 1s; }
-  header .logo-container .square2:hover {
-    background-color: white; }
-  header .logo-container .square3:hover {
-    background-color: white; }
   header .logo-container .logo-name {
     height: 4.4vw;
     margin-top: 1%; }
@@ -439,7 +434,7 @@ footer {
       margin-top: 40%; }
     header .logo-container .logo-name {
       height: 5.5vw; }
-    header .logo-container .square1, header .logo-container .square2, header .logo-container .square3, header .logo-container .square2:hover, header .logo-container .square3:hover {
+    header .logo-container .square1, header .logo-container .square2, header .logo-container .square3 {
       background-color: #ffdd00;
       border-radius: 5%; }
     header .logo-container .square2 {

@@ -39,20 +39,9 @@ header{
       @extend .square1
     }
 
-    .square1:hover{
-      background-color:white;
-      border-radius:7%;
+    .square1:hover, .square2:hover, .square3:hover{
+      transform:scale(1.05);
       transition:1s;
-    }
-
-    .square2:hover{
-      background-color:white;
-      @extend .square1
-    }
-
-    .square3:hover{
-      background-color:white;
-      @extend .square1
     }
 
     .logo-name{
