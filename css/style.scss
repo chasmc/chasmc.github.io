@@ -1,4 +1,5 @@
 @import "casestudytemplate";
+@import "mediaqueries";
 @import "variables";
 @import "mixins";
 
@@ -13,7 +14,7 @@
 body{
   margin:150px 0 0 0;
 }
-// landing page
+/* landing page*/
 header{
 
   .logo-container{
@@ -40,7 +41,9 @@ header{
     }
 
     .square1:hover, .square2:hover, .square3:hover{
-      transform:scale(1.05);
+      -webkit-transform:scale(1.05);
+              transform:scale(1.05);
+      -webkit-transition:1s;
       transition:1s;
     }
 
@@ -62,6 +65,7 @@ footer{
 
   .contact:hover{
     color:$blue;
+    -webkit-transition:.5s;
     transition:.5s;
     cursor:pointer;
   }
@@ -72,14 +76,18 @@ footer{
     display:inline-block;
   }
 }
-// end landing page
+/* end landing page*/
 
-// header template global
+/* header template global*/
 .headertemplate{
   height:110px;
   width:100%;
   padding:10px 0 0 0;
   top:0;
+  background:-webkit-linear-gradient(
+    rgba(white, 1),
+    rgba(white, .99)
+  );
   background:linear-gradient(
     rgba(white, 1),
     rgba(white, .99)
@@ -107,10 +115,16 @@ footer{
       padding:0 3%;
       position:relative;
       top:230%;
-      transform:translateY(-230%);
+      -webkit-transform:translateY(-230%);
+              transform:translateY(-230%);
 
       a{
         @include linkstyle;
+
+        &:hover{
+          -webkit-transition:.5s;
+          transition:.5s;
+        }
       }
 
       .about-link:hover, .about-link.active{
@@ -124,16 +138,12 @@ footer{
       .resume-link:hover, .resume-link.active{
         color:$green;
       }
-
-      a:hover{
-        transition:.5s;
-      }
     }
   }
 }
-// end header template
+/* end header template*/
 
-// about, work and resume page titles
+/* about, work and resume page titles*/
 .main3-titles{
   clear:both;
   @include fontstyle;
@@ -165,7 +175,7 @@ footer{
   color:black;
 }
 
-// about
+/* about*/
 .maincontent-about{
   padding:1% 0;
   border-top:3px solid $yellow;
@@ -183,7 +193,7 @@ footer{
     text-transform:none;
     text-align:left;
     font-weight:500;
-    font-size:25px;
+    font-size:23px;
     margin:0;
   }
 }
@@ -198,12 +208,13 @@ footer{
   .about-contact{
     color:black;
     text-decoration:none;
-  }
 
-  .about-contact:hover{
-    color:$yellow;
-    transition:.5s;
-    cursor:pointer;
+    &:hover{
+      color:$yellow;
+      -webkit-transition:.5s;
+      transition:.5s;
+      cursor:pointer;
+    }
   }
 
   .fa{
@@ -213,7 +224,7 @@ footer{
   }
 }
 
-// work main content
+/* work main content*/
 .maincontent-work, .maincontent-resume{
   margin:0 10%;
 }
@@ -227,6 +238,19 @@ footer{
   box-sizing:border-box;
   position:relative;
 
+  &:hover h2{
+    color:$blue;
+    -webkit-transition:.5s;
+    transition:.5s;
+  }
+
+  &:hover .work-info{
+    -webkit-transform:scale(1);
+            transform:scale(1);
+    -webkit-transition:.5s;
+    transition:.5s;
+  }
+
   .work-info{
     position:absolute;
     bottom:6%;
@@ -236,13 +260,15 @@ footer{
     background-color:rgba(black, .7);
     padding-top:33%;
     box-sizing:border-box;
-    transform:scale(0);
+    -webkit-transform:scale(0);
+            transform:scale(0);
 
-  h2{
-    @include fontstyle;
-    margin:5% 0 0 0;
+    h2{
+      @include fontstyle;
+      margin:5% 0 0 0;
+    }
   }
-}
+
   .image-box{
     height:18.5rem;
     width: 100%;
@@ -256,7 +282,7 @@ footer{
       width: 100%;
     }
   }
-// project blurb
+/* project blurb*/
   p{
     @include fontstyle;
     font-weight:500;
@@ -264,441 +290,5 @@ footer{
     margin-top:0;
     font-style:italic;
     text-transform:none;
-  }
-}
-
-.homepage-grid:hover h2{
-  color:$blue;
-  transition:.5s;
-}
-
-.homepage-grid:hover .work-info{
-  transform:scale(1);
-  transition:.5s;
-}
-// resume
-// .resume-name{
-//   @extend .title-casestudy;
-//   font-size:30px;
-//   margin-bottom:1%;
-// }
-//
-// .main-content-resume{
-//   margin:0 10%;
-//   margin-bottom:5%;
-// }
-//
-// .skillscontainer{
-//   padding-left:15%;
-//
-//   .skills{
-//     display:inline-block;
-//     width:10%;
-//     margin:0;
-//
-//     li{
-//       @include liststylecase;
-//       font-weight:900;
-//       text-align:center;
-//     }
-//   }
-// }
-//
-// .resume-title{
-//   text-transform:uppercase;
-//   font-family:source sans pro;
-//   font-weight:900;
-//   font-size:30px;
-//   border-bottom:3px solid $green;
-//   color:black;
-//   text-align:left;
-//   margin-top:3%;
-//   margin-bottom:2%;
-// }
-//
-// .resume-projects-container{
-//
-//   .project{
-//     display:block;
-//     padding:0 5%;
-//     padding-left:1%;
-//     box-sizing:border-box;
-//     text-align:left;
-//     width:100%;
-//     margin:5% 0;
-//     border-left:1px solid black;
-//     margin-bottom:10%;
-//
-//     .subtitle{
-//       @include fontstyle;
-//       font-weight:900;
-//       text-align:left;
-//       margin:0;
-//       padding:0;
-//     }
-//
-//     .resume-info{
-//       margin:0;
-//       @include fontstyle;
-//       font-weight:500;
-//       font-size:20px;
-//       text-align:left;
-//       text-transform:none;
-//       font-style:italic;
-//     }
-//
-//     .resume-role{
-//       @include fontstyle;
-//       font-size:20px;
-//       text-align:left;
-//       text-transform:none;
-//       margin-top:0;
-//       color:$green;
-//     }
-//
-//     .resume-tools{
-//       margin:0;
-//       @include fontstyle;
-//       font-size:16px;
-//       text-align:left;
-//       text-transform:none;
-//     }
-//   }
-// }
-//
-//   .resume-contact:hover{
-//     color:$green;
-//     transition:.5s;
-//     cursor:pointer;
-//   }
-//
-//   .fa{
-//     font-size:3rem;
-//     margin:0 2% 5% 2%;
-//     display:inline-block;
-//   }
-
-
-
-// media queries
-@media (min-width:768px) and (max-width:1026px){
-
-  .headertemplate .navtemplate .mainnav {
-    margin-left: 40%;
-  }
-
-  .maincontent-work .homepage-grid .work-info{
-    transform:scale(1);
-    transition:.5s;
-    height:40%;
-    padding:2% 0;
-    bottom:30%;
-
-    h2{
-      color:$blue;
-    }
-  }
-}
-
-@media (min-width:586px) and (max-width:767px){
-// landing
-  header{
-
-  .logo-container{
-    text-align:center;
-    height:auto;
-
-    .logo{
-      height:30vw;
-      margin-top:40%;
-    }
-  }
-}
-// header nav template
-  .headertemplate .navtemplate .mainnav {
-    margin-left: 40%;
-  }
-
-  .case-footer, .about-footer{
-    margin-left:1.5%;
-  }
-
-  .maincontent-work .homepage-grid .work-info{
-    transform:scale(1);
-    transition:.1s;
-    height:40%;
-    padding:2% 0;
-    bottom:30%;
-
-    h2{
-      color:$blue;
-    }
-  }
-}
-
-@media (max-width:585px){
-// landing
-  header{
-
-  .logo-container{
-    text-align:center;
-    height:auto;
-
-    .logo{
-      height:30vw;
-      margin-top:40%;
-    }
-
-    .logo-name{
-      height:5.5vw;
-    }
-
-    .square1{
-      background-color:$yellow;
-      border-radius:5%;
-    }
-
-    .square2{
-      background-color:$blue;
-      border-radius:5%;
-    }
-
-    .square3{
-      background-color:$green;
-      border-radius:5%;
-    }
-
-    .square1:hover, .square2:hover, .square3:hover{
-      background-color:white;
-      border-radius:5%;
-    }
-  }
-}
-// icons
-  footer{
-    margin-top:10%;
-  }
-// header nav template
-  .headertemplate{
-    height:147px;
-  }
-
-  .headertemplate .navtemplate {
-    margin-left: 9%;
-}
-
-  .headertemplate .navtemplate .mainnav {
-      margin-left: -12%;
-      margin-top:27%;
-      font-size:20px;
-  }
-
-  .worktitle{
-    display:none;
-  }
-
-  .homepage-grid{
-    float: left;
-    width: 100%;
-    margin:0 1% 2% 1%;
-    height:auto;
-    padding:2% 0;
-    box-sizing:border-box;
-  }
-
-  .maincontent-work .homepage-grid .work-info{
-    transform:scale(1);
-    transition:.1s;
-    height:55%;
-    padding-top:17%;
-    bottom:9%;
-    background-color:rgba(black, .6);
-
-    h2{
-      color:$blue;
-      margin:0;
-    }
-  }
-
-  .case-footer{
-    position:static;
-    text-align:center;
-    width:70%;
-    margin:0 auto;
-    margin-top:50%;
-
-    .fa{
-      font-size:2rem;
-      padding:5%;
-      display:inline-block;
-    }
-  }
-
-// resume
-  .main-content-resume{
-    margin:0 5%;
-    margin-bottom:5%;
-  }
-
-  .resume-title{
-    margin-bottom:7%;
-  }
-
-  .skillscontainer{
-    padding-left:15%;
-
-    .skills{
-      display:block;
-      width:50%;
-
-      li{
-        font-size:25px;
-      }
-    }
-  }
-
-  .resume-projects-container .project{
-    border-left:0px;
-  }
-
-  .maincontent-about{
-
-    .about-image{
-      float:none;
-      width:100%;
-      height:24.98rem;
-    }
-
-    .about-text{
-      font-weight:300;
-      font-size:25px;
-      margin:0;
-    }
-  }
-
-  .abouttitle{
-    color:black;
-    text-align:center;
-    text-transform:uppercase;
-    font-size:20px;
-    margin:50% 0 0 0;
-  }
-
-  .about-footer{
-    position:static;
-    text-align:center;
-    width:70%;
-    margin:0 auto;
-    margin-top:1%;
-
-    .fa{
-      font-size:2rem;
-      padding:5%;
-      display:inline-block;
-    }
-  }
-
-// case studies global
-.main-content-casestudy{
-  margin:0 5%;
-}
-
-.title{
-  margin-top:30%;
-}
-
-.title-casestudy{
-  font-size:25px;
-}
-
-.challengescontainer{
-  padding:0 0 5% 0;
-  box-sizing:border-box;
-
-  .challengestext{
-    font-weight:500;
-    font-size:20px;
-    margin:3% 10% 5% 0;
-    width:100%;
-  }
-
-  .summarytext{
-    width:100%;
-    margin-bottom:15%;
-  }
-
-  .bikemd-challenges-button h4 {
-    display:inline-block;
-    width: 45%;
-    position:static;
-    margin:2% 25%;
-  }
-}
-
-.work-button h4{
-  display:inline-block;
-  width: 45%;
-  position:static;
-  margin:0 25%;
-  margin-bottom:5%;
-}
-
-// bikemd case
-  .bikescreen{
-    width:98%;
-    height:auto;
-  }
-
-// branchless case
-  .branchless-example-container{
-    padding:0;
-  }
-
-  .wireframes{
-    height:auto;
-    width:100%;
-    margin:0;
-  }
-
-  .mockups{
-    height:auto;
-    width:100%;
-    margin:5% 0;
-  }
-
-  .branchless-challenges-button h4{
-    display:inline-block;
-    width: 45%;
-    position:static;
-    margin:2% 25%;
-  }
-  // end branchless
-
-  // goodreads case
-  .goodreads-wireframes{
-    height:auto;
-    width:100%;
-    margin:5% 2% 0 2%;
-  }
-
-  .goodreads-logo{
-    height:auto;
-    width:100%;
-    display:block;
-    margin:5% auto;
-  }
-
-  .goodreads-mockup{
-    height:auto;
-    width:100%;
-    display:block;
-    margin:5% auto;
-  }
-
-  .goodreads-challenges-button h4{
-    display:inline-block;
-    width: 45%;
-    position:static;
-    margin:2% 25%;
   }
 }
