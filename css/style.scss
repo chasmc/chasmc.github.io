@@ -1,5 +1,4 @@
 @import "casestudytemplate";
-@import "mediaqueries";
 @import "variables";
 @import "mixins";
 
@@ -120,11 +119,6 @@ footer{
 
       a{
         @include linkstyle;
-
-        &:hover{
-          -webkit-transition:.5s;
-          transition:.5s;
-        }
       }
 
       .about-link:hover, .about-link.active{
@@ -137,6 +131,11 @@ footer{
 
       .resume-link:hover, .resume-link.active{
         color:$green;
+      }
+
+      a:hover{
+        -webkit-transition:.5s;
+        transition:.5s;
       }
     }
   }
@@ -193,7 +192,7 @@ footer{
     text-transform:none;
     text-align:left;
     font-weight:500;
-    font-size:23px;
+    font-size:25px;
     margin:0;
   }
 }
@@ -208,13 +207,13 @@ footer{
   .about-contact{
     color:black;
     text-decoration:none;
+  }
 
-    &:hover{
-      color:$yellow;
-      -webkit-transition:.5s;
-      transition:.5s;
-      cursor:pointer;
-    }
+  .about-contact:hover{
+    color:$yellow;
+    -webkit-transition:.5s;
+    transition:.5s;
+    cursor:pointer;
   }
 
   .fa{
@@ -238,19 +237,6 @@ footer{
   box-sizing:border-box;
   position:relative;
 
-  &:hover h2{
-    color:$blue;
-    -webkit-transition:.5s;
-    transition:.5s;
-  }
-
-  &:hover .work-info{
-    -webkit-transform:scale(1);
-            transform:scale(1);
-    -webkit-transition:.5s;
-    transition:.5s;
-  }
-
   .work-info{
     position:absolute;
     bottom:6%;
@@ -263,12 +249,11 @@ footer{
     -webkit-transform:scale(0);
             transform:scale(0);
 
-    h2{
-      @include fontstyle;
-      margin:5% 0 0 0;
-    }
+  h2{
+    @include fontstyle;
+    margin:5% 0 0 0;
   }
-
+}
   .image-box{
     height:18.5rem;
     width: 100%;
@@ -290,5 +275,320 @@ footer{
     margin-top:0;
     font-style:italic;
     text-transform:none;
+  }
+}
+
+.homepage-grid:hover h2{
+  color:$blue;
+  -webkit-transition:.5s;
+  transition:.5s;
+}
+
+.homepage-grid:hover .work-info{
+  -webkit-transform:scale(1);
+          transform:scale(1);
+  -webkit-transition:.5s;
+  transition:.5s;
+}
+
+/* media queries*/
+@media (min-width:768px) and (max-width:1026px){
+
+  .headertemplate .navtemplate .mainnav {
+    margin-left: 40%;
+  }
+
+  .maincontent-work .homepage-grid .work-info{
+    -webkit-transform:scale(1);
+            transform:scale(1);
+    -webkit-transition:.5s;
+    transition:.5s;
+    height:40%;
+    padding:2% 0;
+    bottom:30%;
+
+    h2{
+      color:$blue;
+    }
+  }
+}
+
+@media (min-width:586px) and (max-width:767px){
+/* landing*/
+  header{
+
+  .logo-container{
+    text-align:center;
+    height:auto;
+
+    .logo{
+      height:30vw;
+      margin-top:40%;
+    }
+  }
+}
+/* header nav template*/
+  .headertemplate .navtemplate .mainnav {
+    margin-left: 40%;
+  }
+
+  .case-footer, .about-footer{
+    margin-left:1.5%;
+  }
+
+  .maincontent-work .homepage-grid .work-info{
+    -webkit-transform:scale(1);
+            transform:scale(1);
+    -webkit-transition:.1s;
+    transition:.1s;
+    height:40%;
+    padding:2% 0;
+    bottom:30%;
+
+    h2{
+      color:$blue;
+    }
+  }
+}
+
+@media (max-width:585px){
+/* landing*/
+  header{
+
+  .logo-container{
+    text-align:center;
+    height:auto;
+
+    .logo{
+      height:30vw;
+      margin-top:40%;
+    }
+
+    .logo-name{
+      height:5.5vw;
+    }
+
+    .square1{
+      background-color:$yellow;
+      border-radius:5%;
+    }
+
+    .square2{
+      background-color:$blue;
+      border-radius:5%;
+    }
+
+    .square3{
+      background-color:$green;
+      border-radius:5%;
+    }
+
+    .square1:hover, .square2:hover, .square3:hover{
+      background-color:white;
+      border-radius:5%;
+    }
+  }
+}
+/* icons*/
+  footer{
+    margin-top:10%;
+  }
+/* header nav template*/
+  .headertemplate{
+    height:147px;
+  }
+
+  .headertemplate .navtemplate {
+    margin-left: 9%;
+}
+
+  .headertemplate .navtemplate .mainnav {
+      margin-left: -12%;
+      margin-top:27%;
+      font-size:20px;
+  }
+
+  .worktitle{
+    display:none;
+  }
+
+  .homepage-grid{
+    float: left;
+    width: 100%;
+    margin:0 1% 2% 1%;
+    height:auto;
+    padding:2% 0;
+    box-sizing:border-box;
+  }
+
+  .maincontent-work .homepage-grid .work-info{
+    -webkit-transform:scale(1);
+            transform:scale(1);
+    -webkit-transition:.1s;
+    transition:.1s;
+    height:55%;
+    padding-top:17%;
+    bottom:9%;
+    background-color:rgba(black, .6);
+
+    h2{
+      color:$blue;
+      margin:0;
+    }
+  }
+
+  .case-footer{
+    position:static;
+    text-align:center;
+    width:70%;
+    margin:0 auto;
+    margin-top:50%;
+
+    .fa{
+      font-size:2rem;
+      padding:5%;
+      display:inline-block;
+    }
+  }
+
+  .maincontent-about{
+
+    .about-image{
+      float:none;
+      width:100%;
+      height:24.98rem;
+    }
+
+    .about-text{
+      font-weight:300;
+      font-size:25px;
+      margin:0;
+    }
+  }
+
+  .abouttitle{
+    color:black;
+    text-align:center;
+    text-transform:uppercase;
+    font-size:20px;
+    margin:50% 0 0 0;
+  }
+
+  .about-footer{
+    position:static;
+    text-align:center;
+    width:70%;
+    margin:0 auto;
+    margin-top:1%;
+
+    .fa{
+      font-size:2rem;
+      padding:5%;
+      display:inline-block;
+    }
+  }
+
+/* case studies global*/
+.main-content-casestudy{
+  margin:0 5%;
+}
+
+.title{
+  margin-top:30%;
+}
+
+.title-casestudy{
+  font-size:25px;
+}
+
+.challengescontainer{
+  padding:0 0 5% 0;
+  box-sizing:border-box;
+
+  .challengestext{
+    font-weight:500;
+    font-size:20px;
+    margin:3% 10% 5% 0;
+    width:100%;
+  }
+
+  .summarytext{
+    width:100%;
+    margin-bottom:15%;
+  }
+
+  .bikemd-challenges-button h4 {
+    display:inline-block;
+    width: 45%;
+    position:static;
+    margin:2% 25%;
+  }
+}
+
+.work-button h4{
+  display:inline-block;
+  width: 45%;
+  position:static;
+  margin:0 25%;
+  margin-bottom:5%;
+}
+
+/* bikemd case*/
+  .bikescreen{
+    width:98%;
+    height:auto;
+  }
+
+/* branchless case*/
+  .branchless-example-container{
+    padding:0;
+  }
+
+  .wireframes{
+    height:auto;
+    width:100%;
+    margin:0;
+  }
+
+  .mockups{
+    height:auto;
+    width:100%;
+    margin:5% 0;
+  }
+
+  .branchless-challenges-button h4{
+    display:inline-block;
+    width: 45%;
+    position:static;
+    margin:2% 25%;
+  }
+  /* end branchless*/
+
+  /* goodreads case*/
+  .goodreads-wireframes{
+    height:auto;
+    width:100%;
+    margin:5% 2% 0 2%;
+  }
+
+  .goodreads-logo{
+    height:auto;
+    width:100%;
+    display:block;
+    margin:5% auto;
+  }
+
+  .goodreads-mockup{
+    height:auto;
+    width:100%;
+    display:block;
+    margin:5% auto;
+  }
+
+  .goodreads-challenges-button h4{
+    display:inline-block;
+    width: 45%;
+    position:static;
+    margin:2% 25%;
   }
 }

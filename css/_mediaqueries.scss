@@ -62,40 +62,40 @@
 /* landing*/
   header{
 
-    .logo-container{
-      text-align:center;
-      height:auto;
+  .logo-container{
+    text-align:center;
+    height:auto;
 
-      .logo{
-        height:30vw;
-        margin-top:40%;
-      }
+    .logo{
+      height:30vw;
+      margin-top:40%;
+    }
 
-      .logo-name{
-        height:5.5vw;
-      }
+    .logo-name{
+      height:5.5vw;
+    }
 
-      .square1{
-        background-color:$yellow;
-        border-radius:5%;
-      }
+    .square1{
+      background-color:$yellow;
+      border-radius:5%;
+    }
 
-      .square2{
-        background-color:$blue;
-        border-radius:5%;
-      }
+    .square2{
+      background-color:$blue;
+      border-radius:5%;
+    }
 
-      .square3{
-        background-color:$green;
-        border-radius:5%;
-      }
+    .square3{
+      background-color:$green;
+      border-radius:5%;
+    }
 
-      .square1:hover, .square2:hover, .square3:hover{
-        background-color:white;
-        border-radius:5%;
-      }
+    .square1:hover, .square2:hover, .square3:hover{
+      background-color:white;
+      border-radius:5%;
     }
   }
+}
 /* icons*/
   footer{
     margin-top:10%;
@@ -103,16 +103,16 @@
 /* header nav template*/
   .headertemplate{
     height:147px;
+  }
 
-    .navtemplate {
-      margin-left: 9%;
+  .headertemplate .navtemplate {
+    margin-left: 9%;
+}
 
-      .mainnav {
-          margin-left: -12%;
-          margin-top:27%;
-          font-size:20px;
-      }
-    }
+  .headertemplate .navtemplate .mainnav {
+      margin-left: -12%;
+      margin-top:27%;
+      font-size:20px;
   }
 
   .worktitle{
@@ -156,33 +156,6 @@
       padding:5%;
       display:inline-block;
     }
-  }
-
-/* resume*/
-  .main-content-resume{
-    margin:0 5%;
-    margin-bottom:5%;
-  }
-
-  .resume-title{
-    margin-bottom:7%;
-  }
-
-  .skillscontainer{
-    padding-left:15%;
-
-    .skills{
-      display:block;
-      width:50%;
-
-      li{
-        font-size:25px;
-      }
-    }
-  }
-
-  .resume-projects-container .project{
-    border-left:0px;
   }
 
   .maincontent-about{
