@@ -319,7 +319,7 @@ footer {
   margin: 0 10% 5% 10%; }
   .maincontent-about .about-image {
     float: left;
-    height: 22.98rem;
+    height: 14.98rem;
     margin-right: 1.5%; }
   .maincontent-about .about-text {
     text-align: center;
@@ -387,7 +387,9 @@ footer {
     height: 18.5rem;
     width: 100%; }
     .homepage-grid .image-box img {
+      -o-object-fit: cover;
       object-fit: cover;
+      -o-object-position: top;
       object-position: top;
       display: block;
       margin: 0 auto;

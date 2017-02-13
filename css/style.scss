@@ -183,7 +183,7 @@ footer{
 
   .about-image{
     float:left;
-    height:22.98rem;
+    height:14.98rem;
     margin-right:1.5%;
   }
 
@@ -259,8 +259,10 @@ footer{
     width: 100%;
 
     img{
-      object-fit:cover;
-      object-position:top;
+      -o-object-fit:cover;
+         object-fit:cover;
+      -o-object-position:top;
+         object-position:top;
       display:block;
       margin:0 auto;
       height:100%;
