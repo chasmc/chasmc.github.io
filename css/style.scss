@@ -594,3 +594,9 @@ footer{
     margin:2% 25%;
   }
 }
+
+@media (max-width: 400px){
+  .headertemplate .navtemplate li{
+    font-size:23px;
+  }
+}
