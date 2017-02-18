@@ -643,5 +643,8 @@ footer {
     width: 45%;
     position: static;
     margin: 2% 25%; } }
+@media (max-width: 400px) {
+  .headertemplate .navtemplate li {
+    font-size: 23px; } }
 
 /*# sourceMappingURL=style.css.map */
