@@ -120,21 +120,19 @@
         a{
           @include linkstyle;
         }
-  
-        .about-link:hover, .about-link.active{
+        .about-link:hover,
+        .about-link.active{
           color:$yellow;
         }
   
-        .work-link:hover, .work-link.active{
+        .work-link:hover,
+        .work-link.active{
           color:$blue;
         }
   
-        .resume-link:hover, .resume-link.active{
+        .resume-link:hover,
+        .resume-link.active{
           color:$green;
-        }
-  
-        a:hover{
-          transition:.5s;
         }
       }
     }
@@ -302,22 +300,22 @@
   }
 
   .work-1 {
-    animation: workappeartop 1.5s;
+    animation: workappeartop-1 1s;
   }
   .work-2 {
-    animation: workappeartop 1.2s;
+    animation: workappeartop-2 1.2s;
   } 
   .work-3 {
-    animation: workappeartop 1s;
+    animation: workappeartop-3 1.5s;
   }
   .work-4 {
-    animation: workappearbottom 1s;
+    animation: workappearbottom-1 1.7s;
   }
   .work-5 {
-    animation: workappearbottom 1.2s;
+    animation: workappearbottom-2 2s;
   }
   .work-6 {
-    animation: workappearbottom 1.5s;
+    animation: workappearbottom-3 2.2s;
   }
 
       
@@ -661,23 +659,63 @@
 
 
 // work page
-  @keyframes workappeartop { 
+  @keyframes workappeartop-1 { 
     0% {
-        transform: translateX(-500px);
+        transform: translateY(300px);
         opacity: 0;
     }
     100% {
         opacity: 1;
-        transform: translateX(0);
+        transform: translateY(0);
     }
   }
-  @keyframes workappearbottom { 
+  @keyframes workappeartop-2 { 
     0% {
-        transform: translateX(500px);
+        transform: translateY(2300px);
         opacity: 0;
     }
     100% {
         opacity: 1;
-        transform: translateX(0);
+        transform: translateY(0);
+    }
+  }
+  @keyframes workappeartop-3 { 
+    0% {
+        transform: translateY(4300px);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+  @keyframes workappearbottom-1 { 
+    0% {
+        transform: translateY(3000px);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+  @keyframes workappearbottom-2 { 
+    0% {
+        transform: translateY(4000px);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+  }
+  @keyframes workappearbottom-3 { 
+    0% {
+        transform: translateY(5000px);
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
     }
   }

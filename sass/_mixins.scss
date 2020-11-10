@@ -17,6 +17,7 @@
 @mixin linkstyle{
   text-decoration:none;
   color:black;
+  transition: .3s;
 }
 
 @mixin buttonstyles{
