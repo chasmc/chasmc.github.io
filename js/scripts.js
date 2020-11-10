@@ -5,7 +5,7 @@ $(document).ready(function(){
 
     block.each(function(){
         $(this).on('mouseenter', function(){
-            $(this).parent().siblings().children('img').css("opacity", ".4");
+            $(this).parent().siblings().children('img').css("opacity", ".5");
         });
         $(this).on('mouseleave', function(){
             $(this).parent().siblings().children('img').css("opacity", "1");
