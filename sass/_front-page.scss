@@ -1,0 +1,90 @@
+
+  /* front page*/
+  .landing-body {
+    margin:0;
+    .branch{
+      display:none;
+    }
+  
+    .logo-container{
+      text-align:center;
+  
+      .logo{
+        height:23vw;
+        margin-top:8%;
+      }
+  
+      .square1{
+        background-color:$yellow;
+        border-radius:7%;
+        transition:.5s;
+        animation: square1float 2s;
+      }
+  
+      .square2{
+        background-color:$blue;
+        border-radius:7%;
+        transition:.5s;
+        animation: square2float 2s;
+      }
+  
+      .square3{
+        background-color:$green;
+        border-radius:7%;
+        transition:.5s;
+        animation: square3float 2s;
+      }
+  
+      h1 {
+        font-family: "Nunito Sans", sans-serif;
+        font-size: 62px;
+        font-weight: 900;
+        margin-top: 15px;
+        .light {
+            font-weight: 200;
+        }
+      }
+  
+      .logo-name{
+        height:4.4vw;
+        margin-top:1%;
+        animation: nameappear 1s;
+      }
+    }
+  }
+
+
+
+  // front page keyframes
+  @keyframes square1float { 
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+  }
+
+  @keyframes square2float { 
+    0% {
+        transform: translateY(-200%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+  }
+
+  @keyframes square3float { 
+    0% {
+      transform: translateY(-300%);
+      opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+  }

@@ -1,204 +1,110 @@
-/* media queries*/
 
-@media (min-width:586px) and (max-width:767px){
-/* landing*/
-  header{
-    .logo-container{
-      text-align:center;
-      height:auto;
 
-      .logo{
-        height:30vw;
-        margin-top:40%;
-      }
-    }
-  }
-}
 
-@media (min-width:1024px) {
-  .case-footer, .about-footer{
-    margin-left:1.5%;
-  }
-}
+   
 
-@media (max-width:585px){
-/* landing*/
-  header{
+  
 
-  .logo-container{
-    text-align:center;
-    height:auto;
+//   /* case studies global*/
+//   .main-content-casestudy {
+//     margin:0 5%;
+//   }
 
-    .logo{
-      height:30vw;
-      margin-top:40%;
-    }
+//   .title {
+//     margin-top:30%;
+//   }
 
-    .logo-name{
-      height:5.5vw;
-    }
+//   .title-casestudy {
+//     font-size:25px;
+//   }
 
-    .square1{
-      background-color:$yellow;
-      border-radius:5%;
-    }
+//   .challengescontainer { 
+//     padding:0 0 5% 0;
+//     box-sizing:border-box;
 
-    .square2{
-      background-color:$blue;
-      border-radius:5%;
-    }
+//     .challengestext {
+//       font-weight:500;
+//       font-size:20px;
+//       margin:3% 10% 5% 0;
+//       width:100%;
+//     }
 
-    .square3{
-      background-color:$green;
-      border-radius:5%;
-    }
+//     .summarytext {
+//       width:100%;
+//       margin-bottom:15%;
+//     }
 
-    .square1:hover, .square2:hover, .square3:hover{
-      background-color:white;
-      border-radius:5%;
-    }
-  }
-}
-/* icons*/
-  footer{
-    margin-top:10%;
-  }
-/* header nav template*/
-  .headertemplate{
-    height:147px;
-  }
+//     .bikemd-challenges-button h4 {
+//       display:inline-block;
+//       width: 45%;
+//       position:static;
+//       margin:2% 25%;
+//     }
+//   }
 
-  .headertemplate .navtemplate .mainnav {
-      font-size:20px;
-  }
+//  .work-button h4 {
+//     display:inline-block;
+//     width: 45%;
+//     position:static;
+//     margin:0 25%;
+//     margin-bottom:5%;
+//  }
 
-  .worktitle{
-    display:none;
-  }
+//  /* bikemd case*/
+//   .bikescreen {
+//     width:98%;
+//     height:auto;
+//   }
 
-  .abouttitle{
-    color:black;
-    text-align:center;
-    text-transform:uppercase;
-    font-size:20px;
-    margin:50% 0 0 0;
-  }
+//  /* branchless case*/
+//   .branchless-example-container {
+//     padding:0;
+//   }
 
-  .about-footer{
-    position:static;
-    text-align:center;
-    width:70%;
-    margin:0 auto;
-    margin-top:1%;
+//   .wireframes{
+//     height:auto;
+//     width:100%;
+//     margin:0;
+//   }
 
-    .fa{
-      font-size:2rem;
-      padding:5%;
-      display:inline-block;
-    }
-  }
+//   .mockups {
+//     height:auto;
+//     width:100%;
+//     margin:5% 0;
+//   }
 
-/* case studies global*/
-.main-content-casestudy{
-  margin:0 5%;
-}
+//   .branchless-challenges-button h4 {
+//     display:inline-block;
+//     width: 45%;
+//     position:static;
+//     margin:2% 25%;
+//   }
+//   /* end branchless*/
 
-.title{
-  margin-top:30%;
-}
+//   /* goodreads case*/
+//   .goodreads-wireframes {
+//     height:auto;
+//     width:100%;
+//     margin:5% 2% 0 2%;
+//   }
 
-.title-casestudy{
-  font-size:25px;
-}
+//   .goodreads-logo {
+//     height:auto;
+//     width:100%;
+//     display:block;
+//     margin:5% auto;
+//   }
 
-.challengescontainer{
-  padding:0 0 5% 0;
-  box-sizing:border-box;
+//   .goodreads-mockup {
+//     height:auto;
+//     width:100%;
+//     display:block;
+//     margin:5% auto;
+//   }
 
-  .challengestext{
-    font-weight:500;
-    font-size:20px;
-    margin:3% 10% 5% 0;
-    width:100%;
-  }
-
-  .summarytext{
-    width:100%;
-    margin-bottom:15%;
-  }
-
-  .bikemd-challenges-button h4 {
-    display:inline-block;
-    width: 45%;
-    position:static;
-    margin:2% 25%;
-  }
-}
-
-.work-button h4{
-  display:inline-block;
-  width: 45%;
-  position:static;
-  margin:0 25%;
-  margin-bottom:5%;
-}
-
-/* bikemd case*/
-  .bikescreen{
-    width:98%;
-    height:auto;
-  }
-
-/* branchless case*/
-  .branchless-example-container{
-    padding:0;
-  }
-
-  .wireframes{
-    height:auto;
-    width:100%;
-    margin:0;
-  }
-
-  .mockups{
-    height:auto;
-    width:100%;
-    margin:5% 0;
-  }
-
-  .branchless-challenges-button h4{
-    display:inline-block;
-    width: 45%;
-    position:static;
-    margin:2% 25%;
-  }
-  /* end branchless*/
-
-  /* goodreads case*/
-  .goodreads-wireframes{
-    height:auto;
-    width:100%;
-    margin:5% 2% 0 2%;
-  }
-
-  .goodreads-logo{
-    height:auto;
-    width:100%;
-    display:block;
-    margin:5% auto;
-  }
-
-  .goodreads-mockup{
-    height:auto;
-    width:100%;
-    display:block;
-    margin:5% auto;
-  }
-
-  .goodreads-challenges-button h4{
-    display:inline-block;
-    width: 45%;
-    position:static;
-    margin:2% 25%;
-  }
-}
+//   .goodreads-challenges-button h4 {
+//     display:inline-block;
+//     width: 45%;
+//     position:static;
+//     margin:2% 25%;
+//   }
