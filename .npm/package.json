@@ -12,7 +12,7 @@
   "devDependencies": {
     "autoprefixer": "^10.4.2",
     "breakpoint-sass": "^2.7.1",
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^3.0.4",
     "css-declaration-sorter": "^6.1.4",
     "cssnano": "^5.0.15",
     "fancy-log": "^2.0.0",
