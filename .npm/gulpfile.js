@@ -20,8 +20,6 @@ const // Load gulp plugins and assigning them semantic names.
 const paths = {
   sassSrc: ['../sass/*.scss'], 
   sassDest: '../css',
-  jsSrc: ['../js/source/*.js', 'node_modules/vanilla-autofill-event/src/autofill-event.js'],
-  jsDest: '../js/build'
 };
 
 
@@ -43,25 +41,12 @@ function compileSass() {
 exports.sass = compileSass // enables 'gulp sass' from the terminal
 
 
-// Compile JS Scripts
-function compileScripts() {
-  return (
-    gulp.src(paths.jsSrc)
-    .pipe(sourcemaps.init())
-    .pipe(uglify()) // minify js
-    .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest(paths.jsDest)));
-}
-exports.scripts = compileScripts // enables 'gulp scripts' from the terminal
-
-
 
 // Watch Task
 function watchTask() {
   gulp.watch(paths.sassSrc, compileSass);
-  gulp.watch(paths.jsSrc, compileScripts);
 }
 exports.watch = watchTask // enables 'gulp watch' from the terminal
 
 // Default task
-exports.default = gulp.series(compileSass, compileScripts, watchTask);
+exports.default = gulp.series(compileSass, watchTask);
