@@ -21,7 +21,7 @@
 }
   
 
- .workpage-grid{
+ .workpage-grid {
     margin: 10px;
     padding-bottom: 70px;
     height:auto;
@@ -41,18 +41,19 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-        h2{
+        h2 {
           @include fontstyle;
-          margin:5% 0 0 0;
+          margin: 5% 0 0 0;
           color: $blue;
           font-size: 22px;
         }
     }
-    .image-box{
-      height:18.5rem;
+    .image-box {
+      height: 18.5rem;
       width: 100%;
+      border-top: 8px solid $blue;
   
-      img{
+      img {
         object-fit:cover;
         object-position:top;
         display:block;
@@ -62,7 +63,7 @@
       }
     }
   /* project blurb*/
-    p{
+    p {
       @include fontstyle;
       font-weight:500;
       font-size:16px;
@@ -93,12 +94,12 @@
           }
       }
       &:hover {
-          .work-info h2{
+          .work-info h2 {
               color:$blue;
               transition:.5s;
           }
           
-          .work-info{
+          .work-info {
               transform: translateY(0);
               opacity: 1;
           }
