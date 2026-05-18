@@ -5,7 +5,7 @@ const // Load gulp plugins and assigning them semantic names.
   log = require('fancy-log'),
   shell = require('gulp-shell'), // Command line interface for gulp
   // CSS related plugins
-  sass = require('gulp-sass'), // Gulp plugin for Sass compilation
+  sass = require('gulp-sass')(require('sass')), // Gulp plugin for Sass compilation
   sassglob = require('gulp-sass-glob'), // Glob Sass imports
   postcss = require("gulp-postcss"), // pipe css through several plugins (see postcss.config.js) and parse once
   cssnano = require('cssnano'), // Minify css
