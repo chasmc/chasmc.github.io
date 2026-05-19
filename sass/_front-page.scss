@@ -1,17 +1,22 @@
 
   /* front page*/
   .landing-body {
-    margin:0;
+    margin: 300px 0 0;
     .branch{
       display:none;
     }
   
     .logo-container{
-      text-align:center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
   
       .logo{
-        height:23vw;
-        margin-top:8%;
+        margin: 10px;
+      }
+
+      .square {
+        max-width: 350px;
       }
   
       .square1{
@@ -37,18 +42,30 @@
   
       h1 {
         font-family: "Nunito Sans", sans-serif;
-        font-size: 62px;
-        font-weight: 900;
-        margin-top: 15px;
+        font-size: 53px;
+        font-weight: 600;
+        margin-top: 0;
+        margin-left: 35px;
+        margin-bottom: 20px;
         .light {
             font-weight: 200;
+            border-radius: 9%;
         }
       }
   
       .logo-name{
-        height:4.4vw;
-        margin-top:1%;
-        animation: nameappear 1s;
+        opacity: 0;
+        animation: nameappear 2s forwards;
+        .light {
+          animation: nameappear 3s forwards;
+        }
+      }
+
+      .landing-footer {
+        display: flex;
+        margin: 0 0 0 20px;
+        opacity: 0;
+        animation: footerappear .75s ease 2s forwards;
       }
     }
   }
@@ -86,5 +103,25 @@
     100% {
         transform: translateY(0);
         opacity: 1;
+    }
+  }
+
+  @keyframes nameappear {
+    0% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes footerappear {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
     }
   }

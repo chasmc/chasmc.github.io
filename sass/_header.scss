@@ -1,16 +1,6 @@
 
 
 /* header nav template*/
-.headertemplate {
-    height:147px;
-    .navtemplate {
-        background-color:white;
-        .mainnav {
-            font-size:20px;
-        }
-    }
-}
-
 
 .headertemplate{
     height: 147px;
@@ -73,6 +63,9 @@
 
       .mainnav {
         font-size:20px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
       }
     }
 
