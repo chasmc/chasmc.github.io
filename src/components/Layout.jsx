@@ -28,9 +28,9 @@ export default function Layout() {
               </NavLink>
             </li>
             <li className="nav3">
-              <NavLink className={navLinkClass('resume-link')} to="/resume">
+              <a className="resume-link" href={assetUrl('chas-resume.pdf')} target="_blank" rel="noreferrer">
                 Resume
-              </NavLink>
+              </a>
             </li>
           </div>
         </ul>
