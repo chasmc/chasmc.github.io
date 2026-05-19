@@ -5,11 +5,8 @@
     flex-direction: column;
     align-items: center;
     padding: 0;
-    max-width: $large;
+    max-width: $small;
     margin: 240px auto 0;
-    border-top: 3px solid $yellow;
-    background-color: $light-gray;
-    box-shadow: 0 12px 25px 0 rgba(0, 0, 0, 0.36);
 
     .image-wrap {
       display: flex;
@@ -17,8 +14,9 @@
       margin-bottom: 20px;
       .about-image{
         height: auto;
-        max-width: 420px;
+        max-width: 300px;
         margin: 0 auto 20px;
+        border-top: 3px solid $yellow;
       }
     }
 
@@ -52,23 +50,81 @@
 
 
     @media(min-width: $medium) {
+      max-width: calc($medium - 60px);
       flex-direction: row;
       padding: 0 60px 0 0;
+      background-color: transparent;
+      overflow: hidden;
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-color: $light-gray;
+        box-shadow: 0 12px 25px 0 rgba(0, 0, 0, 0.36);
+        opacity: 0;
+        animation: bgFadeIn 1.8s ease forwards;
+        z-index: 0;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background-color: $yellow;
+        transform: scaleX(0);
+        transform-origin: left;
+        animation: borderSlideIn 1s ease forwards;
+        z-index: 3;
+      }
+
       .image-wrap {
         display: flex;
         justify-content: center;
         margin: 0 30px 0 0;
+        position: relative;
+        z-index: 2;
+        flex-shrink: 0;
         .about-image{
+          max-width: 350px;
           margin: 0;
+          border-top: none;
         }
       }
 
       .content-wrap {
-        padding: 40px 0;
+        padding: 0 0 20px;
+        position: relative;
+        z-index: 1;
+        animation: slideFromBehindImage 1s ease forwards;
+        transform: translateX(-100%);
         .about-text{
           font-size: 24px;
         }
       }
     }
   }
+
+@keyframes slideFromBehindImage {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes bgFadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes borderSlideIn {
+  0% { transform: scaleX(0); }
+  100% { transform: scaleX(1); }
+}
 
