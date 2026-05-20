@@ -17,11 +17,15 @@
         max-width: 300px;
         margin: 0 auto 20px;
         border-top: 3px solid $yellow;
+        opacity: 0;
+        animation: bgFadeIn 1.2s ease forwards;
       }
     }
 
     .content-wrap {
       padding: 0 40px 40px;
+      opacity: 0;
+      animation: bgFadeIn 0.8s ease 1.2s both;
       .abouttitle {
           text-transform:uppercase;
           font-size: 42px;
@@ -64,7 +68,7 @@
         background-color: $light-gray;
         box-shadow: 0 12px 25px 0 rgba(0, 0, 0, 0.36);
         opacity: 0;
-        animation: bgFadeIn 1.8s ease forwards;
+        animation: bgFadeIn 1.8s ease 1.2s both;
         z-index: 0;
       }
 
@@ -78,7 +82,7 @@
         background-color: $yellow;
         transform: scaleX(0);
         transform-origin: left;
-        animation: borderSlideIn 1s ease forwards;
+        animation: borderSlideIn 1s ease 1.2s both;
         z-index: 3;
       }
 
@@ -100,7 +104,7 @@
         padding: 0 0 20px;
         position: relative;
         z-index: 1;
-        animation: slideFromBehindImage 1s ease forwards;
+        animation: slideFromBehindImage 1s ease 1.2s both, bgFadeIn 0.8s ease 1.2s both;
         transform: translateX(-100%);
         .about-text{
           font-size: 24px;

@@ -1,59 +1,72 @@
 
-  /* front page*/
+  /* front page */
   .landing-body {
-    margin: 300px 0 0;
-    .branch{
-      display:none;
+    margin: 0 20px;
+    min-height: calc(100vh - 200px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .branch {
+      display: none;
     }
-  
-    .logo-container{
+
+    .logo-container {
       display: flex;
-      justify-content: center;
+      flex-direction: column-reverse;
       align-items: center;
-  
-      .logo{
-        margin: 10px;
+      position: relative;
+
+      .logo {
+        margin: clamp(4px, 1vw, 10px);
       }
 
       .square {
-        max-width: 350px;
+        max-width: clamp(220px, 30vw, 230px);
       }
-  
-      .square1{
-        background-color:$yellow;
-        border-radius:7%;
-        transition:.5s;
+
+      .square1 {
+        background-color: $yellow;
+        border-radius: 7%;
+        transition: .5s;
         animation: square1float 2s;
       }
-  
-      .square2{
-        background-color:$blue;
-        border-radius:7%;
-        transition:.5s;
+
+      .square2 {
+        background-color: $blue;
+        border-radius: 7%;
+        transition: .5s;
         animation: square2float 2s;
       }
-  
-      .square3{
-        background-color:$green;
-        border-radius:7%;
-        transition:.5s;
+
+      .square3 {
+        background-color: $green;
+        border-radius: 7%;
+        transition: .5s;
         animation: square3float 2s;
       }
-  
+
+      .name-logo-con {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 24px;
+      }
+
       h1 {
         font-family: "Nunito Sans", sans-serif;
-        font-size: 53px;
+        font-size: clamp(22px, 4vw, 53px);
         font-weight: 600;
-        margin-top: 0;
-        margin-left: 35px;
-        margin-bottom: 20px;
+        margin: 0 0 15px;
+        text-align: center;
         .light {
-            font-weight: 200;
-            border-radius: 9%;
+          font-weight: 200;
+          border-radius: 9%;
         }
       }
-  
-      .logo-name{
+
+      .logo-name {
         opacity: 0;
         animation: nameappear 2s forwards;
         .light {
@@ -63,46 +76,94 @@
 
       .landing-footer {
         display: flex;
-        margin: 0 0 0 20px;
+        justify-content: center;
+        margin: 0;
         opacity: 0;
         animation: footerappear .75s ease 2s forwards;
+        position: absolute;
+        bottom: -55px;
+      }
+    }
+  }
+
+  @media (min-width: $small) {
+    .landing-body {
+      margin: 60px 0 0;
+
+      .logo-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .square {
+          max-width: clamp(70px, 20vw, 350px);
+        }
+
+        .landing-footer {
+          position: static;
+        }
+      }
+    }
+  }
+
+  @media (min-width: $medium) {
+    .landing-body {
+      margin: 300px 0 0;
+
+      .logo-container {
+        flex-wrap: nowrap;
+
+        .name-logo-con {
+          width: auto;
+          align-items: flex-start;
+          margin-top: 0;
+        }
+
+        h1 {
+          text-align: left;
+          margin: 0 0 15px clamp(15px, 2vw, 35px);
+        }
+
+        .landing-footer {
+          justify-content: flex-start;
+          margin: 0 0 0 clamp(15px, 2vw, 35px);
+        }
       }
     }
   }
 
 
-
   // front page keyframes
-  @keyframes square1float { 
+  @keyframes square1float {
     0% {
-        transform: translateY(-100%);
-        opacity: 0;
+      transform: translateY(-100%);
+      opacity: 0;
     }
     100% {
-        transform: translateY(0);
-        opacity: 1;
+      transform: translateY(0);
+      opacity: 1;
     }
   }
 
-  @keyframes square2float { 
+  @keyframes square2float {
     0% {
-        transform: translateY(-200%);
-        opacity: 0;
+      transform: translateY(-200%);
+      opacity: 0;
     }
     100% {
-        transform: translateY(0);
-        opacity: 1;
+      transform: translateY(0);
+      opacity: 1;
     }
   }
 
-  @keyframes square3float { 
+  @keyframes square3float {
     0% {
       transform: translateY(-300%);
       opacity: 0;
     }
     100% {
-        transform: translateY(0);
-        opacity: 1;
+      transform: translateY(0);
+      opacity: 1;
     }
   }
 
