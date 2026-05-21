@@ -127,7 +127,7 @@ export default function Resume() {
       </div>
 
       <div className="toolscontainer">
-        <a className="bikemd-challenges-button" href={assetUrl('chas-resume.pdf')} target="_blank" rel="noreferrer">
+        <a className="bikemd-challenges-button" href={assetUrl('chas-resume-2026.pdf')} target="_blank" rel="noreferrer">
           <h4>Open PDF Resume</h4>
         </a>
       </div>
