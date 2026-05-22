@@ -45,7 +45,7 @@
           @include fontstyle;
           margin: 5% 0 0 0;
           color: $blue;
-          font-size: 22px;
+          font-size: 2.2rem;
         }
     }
     .image-box {
@@ -67,7 +67,7 @@
     p {
       @include fontstyle;
       font-weight:500;
-      font-size:16px;
+      font-size:1.6rem;
       margin-top:0;
       font-style:italic;
       text-transform:none;
@@ -91,7 +91,7 @@
           top: 0;
           background-color:rgba(black, .7);
           h2 {
-              font-size: 27px;
+              font-size: 2.7rem;
           }
       }
       &:hover {

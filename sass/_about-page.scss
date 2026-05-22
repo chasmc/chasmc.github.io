@@ -28,7 +28,7 @@
       animation: bgFadeIn 0.8s ease 1.2s both;
       .abouttitle {
           text-transform:uppercase;
-          font-size: 42px;
+          font-size: 4.2rem;
           margin-left: 0;
           margin-bottom: 10px;
           color:black;
@@ -39,7 +39,7 @@
         text-transform:none;
         text-align:left;
         font-weight:400;
-        font-size:21px;
+        font-size:2.1rem;
         margin:0;
       }
     }
@@ -107,7 +107,7 @@
         animation: slideFromBehindImage 1s ease 1.2s both, bgFadeIn 0.8s ease 1.2s both;
         transform: translateX(-100%);
         .about-text{
-          font-size: 24px;
+          font-size: 2.4rem;
         }
       }
     }

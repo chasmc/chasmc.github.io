@@ -4,7 +4,7 @@
   text-transform:uppercase;
   font-family: 'Source Sans Pro', sans-serif;
   font-weight:900;
-  font-size:25px;
+  font-size:2.5rem;
 }
 
 @mixin liststylecase{
@@ -12,7 +12,7 @@
   font-family: 'Source Sans Pro', sans-serif;
   padding:10px 0;
   font-weight:100;
-  font-size:20px;
+  font-size:2.0rem;
 }
 
 @mixin linkstyle{
@@ -24,7 +24,7 @@
 @mixin buttonstyles{
   border:1px solid $blue;
   border-radius:3%;
-  font-size:20px;
+  font-size:2.0rem;
   display:inline-block;
   text-align:center;
   padding:2%;

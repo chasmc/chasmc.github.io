@@ -1,10 +1,10 @@
 
-@import "variables";
+@import "_variables";
 @import "mixins";
+@import "base";
 @import "header";
 @import "footer";
-@import "main";
-@import "front-page";
+@import "home-page";
 @import "work-page";
 @import "about-page";
 @import "mediaqueries";

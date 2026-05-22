@@ -3,14 +3,15 @@ import { assetUrl } from '../utils/assets'
 export default function Work() {
   return (
     <div className="maincontent-work">
-      <a href="https://www.trianglepest.com" target="_blank" rel="noreferrer">
-        <div className="workpage-grid work-2">
+
+      <a href="https://www.fijipool.com/" target="_blank" rel="noreferrer">
+        <div className="workpage-grid work-5">
           <div className="work-info">
-            <h2>Triangle Pest</h2>
-            <p>Site build for Triangle Pest Control</p>
+            <h2>Fiji Pools</h2>
+            <p>Site build for Fiji Pools</p>
           </div>
           <div className="image-box">
-            <img src={assetUrl('triangle-thumbnail.png')} alt="triangle pest" />
+            <img src={assetUrl('ecopool-thumbnail.png')} alt="Fiji Pools" />
           </div>
         </div>
       </a>
@@ -54,18 +55,19 @@ export default function Work() {
         </div>
       </a>
 
-      <a href="https://www.fijipool.com/" target="_blank" rel="noreferrer">
-        <div className="workpage-grid work-5">
+      <a href="https://affinitypestcontrol.com/" target="_blank" rel="noreferrer">
+        <div className="workpage-grid work-2">
           <div className="work-info">
-            <h2>Fiji Pools</h2>
-            <p>Site build for Fiji Pools</p>
+            <h2>Affinity Pest</h2>
+            <p>Site build for Affinity Pest Control</p>
           </div>
           <div className="image-box">
-            <img src={assetUrl('ecopool-thumbnail.png')} alt="Fiji Pools" />
+            <img src={assetUrl('affinity-thumbnail.png')} alt="affinity pest" />
           </div>
         </div>
       </a>
 
+      
       <a href="https://www.freedomlawnsusa.com/" target="_blank" rel="noreferrer">
         <div className="workpage-grid work-6">
           <div className="work-info">

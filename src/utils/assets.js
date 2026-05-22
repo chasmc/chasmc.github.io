@@ -1,4 +1,5 @@
 import aaThumbnail from '../assets/images/aa-thumbnail.png'
+import affinityThumbnail from '../assets/images/affinity-thumbnail.png'
 import aboutHeadshot from '../assets/images/chas_headshot.jpg'
 import ecopoolThumbnail from '../assets/images/ecopool-thumbnail.png'
 import freedomLawnsThumbnail from '../assets/images/freedomlawns-thumbnail.png'
@@ -13,6 +14,7 @@ import triangleThumbnail from '../assets/images/triangle-thumbnail.png'
 
 const assets = {
   'aa-thumbnail.png': aaThumbnail,
+  'affinity-thumbnail.png': affinityThumbnail,
   'chas_headshot.jpg': aboutHeadshot,
   'ecopool-thumbnail.png': ecopoolThumbnail,
   'freedomlawns-thumbnail.png': freedomLawnsThumbnail,
