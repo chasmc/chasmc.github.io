@@ -28,7 +28,7 @@ export default function Layout() {
               </NavLink>
             </li>
             <li className="nav3">
-              <a className="resume-link" href={assetUrl('chas-resume-2026.pdf')} target="_blank" rel="noreferrer">
+              <a className="resume-link" href={assetUrl('cmckeown-resume-2026-dev.pdf')} target="_blank" rel="noreferrer">
                 Resume
               </a>
             </li>

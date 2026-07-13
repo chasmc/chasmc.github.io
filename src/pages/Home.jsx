@@ -47,7 +47,7 @@ export default function Home() {
           <Link to="/work">
             <img className="logo square square2" src={assetUrl('square2.png')} alt="Work" />
           </Link>
-          <a href={assetUrl('chas-resume-2026.pdf')} target="_blank" rel="noreferrer">
+          <a href={assetUrl('cmckeown-resume-2026-dev.pdf')} target="_blank" rel="noreferrer">
             <img className="logo square square3" src={assetUrl('square3.png')} alt="Resume" />
           </a>
           <div className="name-logo-con">

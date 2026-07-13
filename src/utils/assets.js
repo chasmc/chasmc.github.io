@@ -5,7 +5,7 @@ import ecopoolThumbnail from '../assets/images/ecopool-thumbnail.png'
 import freedomLawnsThumbnail from '../assets/images/freedomlawns-thumbnail.png'
 import portfolioLogo from '../assets/images/port-logo-threesquares-2026.png'
 import premierThumbnail from '../assets/images/premier-thumbnail.png'
-import resumePdf from '../assets/images/chas-resume-2026.pdf'
+import resumePdf from '../assets/images/cmckeown-resume-2026-dev.pdf'
 import square1 from '../assets/images/square1.png'
 import square2 from '../assets/images/square2.png'
 import square3 from '../assets/images/square3.png'
@@ -20,7 +20,7 @@ const assets = {
   'freedomlawns-thumbnail.png': freedomLawnsThumbnail,
   'port-logo-threesquares-2026.png': portfolioLogo,
   'premier-thumbnail.png': premierThumbnail,
-  'chas-resume-2026.pdf': resumePdf,
+  'cmckeown-resume-2026-dev.pdf': resumePdf,
   'square1.png': square1,
   'square2.png': square2,
   'square3.png': square3,
